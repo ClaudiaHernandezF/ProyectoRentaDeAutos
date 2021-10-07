@@ -3,12 +3,11 @@ Imports Oracle.DataAccess.Client
 
 Module Globales
 
-    'Para trabajar con una base de datos ORACLE, es requerida
+    ' Para trabajar con una base de datos ORACLE, es requerida
     ' para poder abrir y cerrar la BD
     Public cnx As OracleConnection
 
     ' Definir variables de mi proyecto
-    Public idLogin As Integer
     Public usuario As String
     Public contrasena As String
     Public idEstadoAuto As Integer

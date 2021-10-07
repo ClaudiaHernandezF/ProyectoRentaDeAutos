@@ -1,39 +1,24 @@
-﻿
-'Todo lo que veas en color verde son comentarios
+﻿Imports Oracle.DataAccess.Client
 
-Imports Oracle.DataAccess.Client
-
+' En esta clase defino mis contructores y querys necesarios para mi FrmLogin
+' En la tabla LogAdministradores cuento con dos atributos --> usuario y contrasena
 Public Class ClaseLogin
 
-    'Private nombre As String
-
-    'Método constructor inicializa variables
+    'Método constructor que inicializa variables
     Public Sub New()
-        'Si tus variables son de otro tipo (numeric,Integer, etc) tendrías que iniciarlas en 0
-        idLogin = "0"
+        ' Son variables de tipo String, por lo que inicializan como ""
         usuario = ""
         contrasena = ""
     End Sub
 
-
     'Metodo constructor con valores proporcionados al instanciar el objeto
-    Public Sub New(ByVal elIdLogin As Integer, ByVal elUsuario As String, ByVal laContraseña As String)
+    Public Sub New(ByVal elUsuario As String, ByVal laContraseña As String)
         'Aquí recibimos los datos
-        idLogin = elIdLogin
         usuario = elUsuario
         contrasena = laContraseña
     End Sub
 
     'Metodos get y set
-    Public Property getSetIdLogin() As Integer
-        Get
-            Return idLogin
-        End Get
-        Set(ByVal Value As Integer)
-            idLogin = Value
-        End Set
-    End Property
-
     Public Property getSetUsuario() As String
         Get
             Return usuario
@@ -53,34 +38,26 @@ Public Class ClaseLogin
     End Property
 
     Public Function consultaUsuario() As Boolean
-
-        ' Utilizada para obtener el ID del país seleccionado, ejemplo para cuando
-        ' requieran obtener un ID de alguna tabla de un registro ya existente, 
-        ' la búsqueda la hace por el nombre del país
+        ' Utilizada para comprobar si mi usuario y contraseña existen en la tabla de LogAdministradores
 
         Dim strSQL As String
         Dim xCnx As New Oracle
         Dim xDT As DataTable
 
-
-        'Igual que en el insert, la parte fija de la sintaxis del UPDATE se escribe entre comillas,
-        ' el simbolo & se usa para continuar la línea, y los valores en éste caso son las variables o las
-        ' cajas de texto del formulario VARCHAR y DATE se esciben entre apostrofes
-
-        strSQL = "SELECT idLogin FROM Login " & "WHERE usuario='" & FrmLogin.TxtUsuario.Text & "'and contrasena ='" & FrmLogin.TxtContraseña.Text & "'"
+        ' Verifico con una sentencia de SELECT mis datos en la tabla LogAdministradores, para ver si los valores de mis variables 
+        ' son iguales a los valores que me den en login (usuario y contraseña) en mis textBox
+        strSQL = "SELECT * FROM LogAdministradores " & "WHERE usuario='" & FrmLogin.TxtUsuario.Text & "'and contrasena ='" & FrmLogin.TxtContraseña.Text & "'"
 
         consultaUsuario = False
         xDT = xCnx.objetoDataAdapter(strSQL)
         If xDT.Rows.Count = 1 Then
-            If IsDBNull(xDT.Rows(0)("idLogin")) Then
-                idLogin = ""
+            If IsDBNull(xDT.Rows(0)("usuario")) Then
+                usuario = ""
             Else
-                idLogin = CStr(xDT.Rows(0)("idLogin"))
-                usuario = idLogin
+                usuario = CStr(xDT.Rows(0)("usuario"))
             End If
             consultaUsuario = True
         End If
     End Function
-
 
 End Class

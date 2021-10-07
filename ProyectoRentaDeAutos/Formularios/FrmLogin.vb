@@ -1,27 +1,33 @@
-﻿Public Class FrmLogin
+﻿' Valores cargados al ejecutar mi aplicación, en el FrmLogin
+Public Class FrmLogin
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' La contraseña aparece oculta cuando aparece el formulario
+        TxtContraseña.UseSystemPasswordChar = True
+
+        ' Definir ToolTip para mostrar mensajes de ayuda en los elementos de mi FrmLogin 
+        Me.ToolTip1.SetToolTip(Me.TxtUsuario, "Ingresar nombre de Administrador")
+        Me.ToolTip1.SetToolTip(Me.TxtContraseña, "Ingresar contraseña de Administrador")
+        Me.ToolTip1.SetToolTip(Me.ChbMostrar, "Mostrar contraseña")
+        Me.ToolTip1.SetToolTip(Me.BtnInSesion, "Clic para iniciar sesión")
 
     End Sub
 
+    ' Acción del botón "Iniciar sesión"
     Private Sub btnInSesion_Click(sender As Object, e As EventArgs) Handles BtnInSesion.Click
 
-        'instanciamos la clase y le pasamos como parámetros los cuatro datos
+        ' Instanciar la clase y pasarle como parámetros los dos datos del login
+        Dim login As New ClaseLogin(TxtUsuario.Text, TxtContraseña.Text)
 
-        Dim login As New ClaseLogin(idLogin, TxtUsuario.Text, TxtContraseña.Text)
         ' Definir que mis variables van a ser igual a los valores que tengo en mis textBox
         login.getSetUsuario = TxtUsuario.Text
         login.getSetContrasena = TxtContraseña.Text
 
-        ' Declarar variables para mis dos datos
-        ' Dim usuarioAdmi As String
-        ' Dim contraseña As String
-
         ' Si el usuario y contraseñas son válidos me permite seguir
         If (login.consultaUsuario() = True) Then
-            ' Cerrar ventana
-            ' Me.Hide()
             ' Muestra siguiente formulario
             Frm1.Show()
+            ' Cerrar ventana
+            ' Me.Close()
             ' Si el usuario o contraseña no son válidos, me envía un mensaje
         Else
             MsgBox("Usuario o contraseña no válidas", MsgBoxStyle.Critical, "Datos incorrectos")
@@ -32,18 +38,14 @@
         TxtContraseña.Text = ""
     End Sub
 
-    Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
-        ' Cerrar formulario con botón Cerrar
-        Me.Close()
-    End Sub
-
+    ' Configuración del CheckBox "Mostrar" para la contraseña
     Private Sub ChbMostrar_CheckedChanged(sender As Object, e As EventArgs) Handles ChbMostrar.CheckedChanged
-        ' Si es checkBox está activo se oculta la contraseña
+        ' Si el checkBox está activo se oculta la contraseña
         If (ChbMostrar.Checked = True) Then
-            TxtContraseña.UseSystemPasswordChar = True
+            TxtContraseña.UseSystemPasswordChar = False
         Else
             ' Si es checkBox está desactivado se muestra la contraseña
-            TxtContraseña.UseSystemPasswordChar = False
+            TxtContraseña.UseSystemPasswordChar = True
         End If
     End Sub
 
