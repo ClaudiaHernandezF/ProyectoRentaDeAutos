@@ -40,11 +40,11 @@ Public Class FrmLogin
 
     ' Configuración del CheckBox "Mostrar" para la contraseña
     Private Sub ChbMostrar_CheckedChanged(sender As Object, e As EventArgs) Handles ChbMostrar.CheckedChanged
-        ' Si el checkBox está activo se oculta la contraseña
+        ' Si el checkBox está activo se muestra la contraseña
         If (ChbMostrar.Checked = True) Then
             TxtContraseña.UseSystemPasswordChar = False
         Else
-            ' Si es checkBox está desactivado se muestra la contraseña
+            ' Si es checkBox está desactivado se oculta la contraseña
             TxtContraseña.UseSystemPasswordChar = True
         End If
     End Sub
