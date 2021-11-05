@@ -19,13 +19,13 @@ Public Class FrmLogin
         Dim login As New ClaseLogin(TxtUsuario.Text, TxtContraseña.Text)
 
         ' Definir que mis variables van a ser igual a los valores que tengo en mis textBox
-        login.getSetUsuario = TxtUsuario.Text
-        login.getSetContrasena = TxtContraseña.Text
+        'login.getSetUsuario = TxtUsuario.Text
+        'login.getSetContrasena = TxtContraseña.Text
 
         ' Si el usuario y contraseñas son válidos me permite seguir
         If (login.consultaUsuario() = True) Then
             ' Muestra siguiente formulario
-            Frm1.Show()
+            Catalago.Show()
             ' Cerrar ventana
             ' Me.Close()
             ' Si el usuario o contraseña no son válidos, me envía un mensaje

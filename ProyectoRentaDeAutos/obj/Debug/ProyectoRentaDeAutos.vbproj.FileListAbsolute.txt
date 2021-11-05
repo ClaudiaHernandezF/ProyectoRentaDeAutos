@@ -11,3 +11,17 @@ C:\Users\claud\OneDrive\Documentos\Semestre 5\Administración de base de datos\P
 C:\Users\claud\OneDrive\Documentos\Semestre 5\Administración de base de datos\PROYECTO Renta de Autos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.pdb
 C:\Users\claud\OneDrive\Documentos\Semestre 5\Administración de base de datos\PROYECTO Renta de Autos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.Frm1.resources
 C:\Users\claud\OneDrive\Documentos\Semestre 5\Administración de base de datos\PROYECTO Renta de Autos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\Oracle.DataAccess.dll
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\ProyectoRentaDeAutos.exe.config
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\ProyectoRentaDeAutos.exe
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\ProyectoRentaDeAutos.pdb
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\ProyectoRentaDeAutos.xml
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\Oracle.DataAccess.dll
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.vbproj.AssemblyReference.cache
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.Frm1.resources
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.FrmLogin.resources
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.Resources.resources
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.vbproj.GenerateResource.cache
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.vbproj.CoreCompileInputs.cache
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.exe
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.xml
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.pdb

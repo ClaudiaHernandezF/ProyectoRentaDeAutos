@@ -77,10 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ClaseLogin.vb" />
-    <Compile Include="Formularios\Frm1.Designer.vb">
-      <DependentUpon>Frm1.vb</DependentUpon>
+    <Compile Include="Formularios\Catalago.Designer.vb">
+      <DependentUpon>Catalago.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm1.vb">
+    <Compile Include="Formularios\Catalago.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmLogin.vb">
@@ -109,8 +109,8 @@
     <Compile Include="ConectaBD\Oracle.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\Frm1.resx">
-      <DependentUpon>Frm1.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\Catalago.resx">
+      <DependentUpon>Catalago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
