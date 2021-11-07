@@ -17,7 +17,6 @@ C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\Proyecto
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\ProyectoRentaDeAutos.xml
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\bin\Debug\Oracle.DataAccess.dll
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.vbproj.AssemblyReference.cache
-C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.Frm1.resources
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.FrmLogin.resources
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.Resources.resources
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.vbproj.GenerateResource.cache
@@ -25,3 +24,4 @@ C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\Proyecto
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.exe
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.xml
 C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.pdb
+C:\AdminBasedeDatos\ProyectoRentaDeAutos\ProyectoRentaDeAutos\obj\Debug\ProyectoRentaDeAutos.Catalago.resources
