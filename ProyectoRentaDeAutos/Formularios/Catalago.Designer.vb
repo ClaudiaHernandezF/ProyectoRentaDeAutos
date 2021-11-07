@@ -42,11 +42,13 @@ Partial Class Catalago
         Me.TextIDEstAuto = New System.Windows.Forms.TextBox()
         Me.LabelIDEstAuto = New System.Windows.Forms.Label()
         Me.TabMarcas = New System.Windows.Forms.TabPage()
+        Me.DataMarcas = New System.Windows.Forms.DataGridView()
         Me.TextNombreMarca = New System.Windows.Forms.TextBox()
         Me.LabelNombreMarca = New System.Windows.Forms.Label()
         Me.TextIDMarca = New System.Windows.Forms.TextBox()
         Me.LabelIDMarca = New System.Windows.Forms.Label()
         Me.TabModelos = New System.Windows.Forms.TabPage()
+        Me.DataModelos = New System.Windows.Forms.DataGridView()
         Me.ComboIDMarca = New System.Windows.Forms.ComboBox()
         Me.TextNombreModelo = New System.Windows.Forms.TextBox()
         Me.LabelNombreModelo = New System.Windows.Forms.Label()
@@ -54,6 +56,7 @@ Partial Class Catalago
         Me.LabelModeloIDMarca = New System.Windows.Forms.Label()
         Me.LabelIDModelo = New System.Windows.Forms.Label()
         Me.TabPrecios = New System.Windows.Forms.TabPage()
+        Me.DataPrecios = New System.Windows.Forms.DataGridView()
         Me.TextMontoGarantia = New System.Windows.Forms.TextBox()
         Me.TextMontoDia = New System.Windows.Forms.TextBox()
         Me.LabelPrecioModelo = New System.Windows.Forms.Label()
@@ -63,11 +66,13 @@ Partial Class Catalago
         Me.TextIDPrecio = New System.Windows.Forms.TextBox()
         Me.LabelIDPrecio = New System.Windows.Forms.Label()
         Me.TabEstados = New System.Windows.Forms.TabPage()
+        Me.DataEstados = New System.Windows.Forms.DataGridView()
         Me.TextNombreEstado = New System.Windows.Forms.TextBox()
         Me.LabelNombreEstado = New System.Windows.Forms.Label()
         Me.TextIDEst = New System.Windows.Forms.TextBox()
         Me.LabelIDEst = New System.Windows.Forms.Label()
         Me.TabCiudades = New System.Windows.Forms.TabPage()
+        Me.DataCiudades = New System.Windows.Forms.DataGridView()
         Me.ComboCiudadIDEstado = New System.Windows.Forms.ComboBox()
         Me.TextNombreCiudad = New System.Windows.Forms.TextBox()
         Me.TextIDCiudad = New System.Windows.Forms.TextBox()
@@ -75,6 +80,7 @@ Partial Class Catalago
         Me.LabelCiudadesIDEstado = New System.Windows.Forms.Label()
         Me.LabelIDCiudad = New System.Windows.Forms.Label()
         Me.TabColonias = New System.Windows.Forms.TabPage()
+        Me.DataColonias = New System.Windows.Forms.DataGridView()
         Me.ComboColCiudades = New System.Windows.Forms.ComboBox()
         Me.ComboColEstados = New System.Windows.Forms.ComboBox()
         Me.LabelColCiudad = New System.Windows.Forms.Label()
@@ -88,12 +94,33 @@ Partial Class Catalago
         Me.TabClientes = New System.Windows.Forms.TabPage()
         Me.TabEmpleados = New System.Windows.Forms.TabPage()
         Me.TabRentas = New System.Windows.Forms.TabPage()
-        Me.DataMarcas = New System.Windows.Forms.DataGridView()
-        Me.DataModelos = New System.Windows.Forms.DataGridView()
-        Me.DataPrecios = New System.Windows.Forms.DataGridView()
-        Me.DataEstados = New System.Windows.Forms.DataGridView()
-        Me.DataCiudades = New System.Windows.Forms.DataGridView()
-        Me.DataColonias = New System.Windows.Forms.DataGridView()
+        Me.ButtonNuevoAuto = New System.Windows.Forms.Button()
+        Me.ButtonGuardarAuto = New System.Windows.Forms.Button()
+        Me.ButtonEliminarAuto = New System.Windows.Forms.Button()
+        Me.EliminarEstAuto = New System.Windows.Forms.Button()
+        Me.GuardarEstAuto = New System.Windows.Forms.Button()
+        Me.NuevoEstAuto = New System.Windows.Forms.Button()
+        Me.EliminarMarca = New System.Windows.Forms.Button()
+        Me.GuardarMarca = New System.Windows.Forms.Button()
+        Me.NuevaMarca = New System.Windows.Forms.Button()
+        Me.EliminarModelo = New System.Windows.Forms.Button()
+        Me.GuardarModelo = New System.Windows.Forms.Button()
+        Me.NuevoModelo = New System.Windows.Forms.Button()
+        Me.EliminarPrecio = New System.Windows.Forms.Button()
+        Me.GuardarPrecio = New System.Windows.Forms.Button()
+        Me.NuevoPrecio = New System.Windows.Forms.Button()
+        Me.EliminarEstado = New System.Windows.Forms.Button()
+        Me.GuardarEstado = New System.Windows.Forms.Button()
+        Me.NuevoEstado = New System.Windows.Forms.Button()
+        Me.EliminarCiudad = New System.Windows.Forms.Button()
+        Me.GuardarCiudad = New System.Windows.Forms.Button()
+        Me.NuevaCiudad = New System.Windows.Forms.Button()
+        Me.EliminarColonia = New System.Windows.Forms.Button()
+        Me.GuardarColonia = New System.Windows.Forms.Button()
+        Me.NuevaColonia = New System.Windows.Forms.Button()
+        Me.EliminarSucursal = New System.Windows.Forms.Button()
+        Me.GuardarSucursal = New System.Windows.Forms.Button()
+        Me.NuevaSucursal = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TablasPestanas.SuspendLayout()
         Me.TabAutos.SuspendLayout()
@@ -101,18 +128,18 @@ Partial Class Catalago
         Me.TabEstAuto.SuspendLayout()
         CType(Me.DataEstadosAuto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabMarcas.SuspendLayout()
-        Me.TabModelos.SuspendLayout()
-        Me.TabPrecios.SuspendLayout()
-        Me.TabEstados.SuspendLayout()
-        Me.TabCiudades.SuspendLayout()
-        Me.TabColonias.SuspendLayout()
-        Me.TabSucursales.SuspendLayout()
         CType(Me.DataMarcas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabModelos.SuspendLayout()
         CType(Me.DataModelos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPrecios.SuspendLayout()
         CType(Me.DataPrecios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabEstados.SuspendLayout()
         CType(Me.DataEstados, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabCiudades.SuspendLayout()
         CType(Me.DataCiudades, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabColonias.SuspendLayout()
         CType(Me.DataColonias, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabSucursales.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -144,11 +171,14 @@ Partial Class Catalago
         Me.TablasPestanas.Location = New System.Drawing.Point(12, 12)
         Me.TablasPestanas.Name = "TablasPestanas"
         Me.TablasPestanas.SelectedIndex = 0
-        Me.TablasPestanas.Size = New System.Drawing.Size(678, 367)
+        Me.TablasPestanas.Size = New System.Drawing.Size(678, 412)
         Me.TablasPestanas.TabIndex = 2
         '
         'TabAutos
         '
+        Me.TabAutos.Controls.Add(Me.ButtonEliminarAuto)
+        Me.TabAutos.Controls.Add(Me.ButtonGuardarAuto)
+        Me.TabAutos.Controls.Add(Me.ButtonNuevoAuto)
         Me.TabAutos.Controls.Add(Me.CheckDisponible)
         Me.TabAutos.Controls.Add(Me.ComboEstAuto)
         Me.TabAutos.Controls.Add(Me.ComboMarca)
@@ -161,7 +191,7 @@ Partial Class Catalago
         Me.TabAutos.Controls.Add(Me.DataAutos)
         Me.TabAutos.Location = New System.Drawing.Point(4, 22)
         Me.TabAutos.Name = "TabAutos"
-        Me.TabAutos.Size = New System.Drawing.Size(670, 341)
+        Me.TabAutos.Size = New System.Drawing.Size(670, 386)
         Me.TabAutos.TabIndex = 11
         Me.TabAutos.Text = "Autos"
         Me.TabAutos.UseVisualStyleBackColor = True
@@ -248,11 +278,14 @@ Partial Class Catalago
         Me.DataAutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataAutos.Location = New System.Drawing.Point(3, 111)
         Me.DataAutos.Name = "DataAutos"
-        Me.DataAutos.Size = New System.Drawing.Size(664, 227)
+        Me.DataAutos.Size = New System.Drawing.Size(664, 243)
         Me.DataAutos.TabIndex = 3
         '
         'TabEstAuto
         '
+        Me.TabEstAuto.Controls.Add(Me.EliminarEstAuto)
+        Me.TabEstAuto.Controls.Add(Me.GuardarEstAuto)
+        Me.TabEstAuto.Controls.Add(Me.NuevoEstAuto)
         Me.TabEstAuto.Controls.Add(Me.DataEstadosAuto)
         Me.TabEstAuto.Controls.Add(Me.TextDescEstAuto)
         Me.TabEstAuto.Controls.Add(Me.LabelDescEstAuto)
@@ -260,7 +293,7 @@ Partial Class Catalago
         Me.TabEstAuto.Controls.Add(Me.LabelIDEstAuto)
         Me.TabEstAuto.Location = New System.Drawing.Point(4, 22)
         Me.TabEstAuto.Name = "TabEstAuto"
-        Me.TabEstAuto.Size = New System.Drawing.Size(670, 341)
+        Me.TabEstAuto.Size = New System.Drawing.Size(670, 386)
         Me.TabEstAuto.TabIndex = 2
         Me.TabEstAuto.Text = "Estados de auto"
         Me.TabEstAuto.UseVisualStyleBackColor = True
@@ -272,7 +305,7 @@ Partial Class Catalago
         Me.DataEstadosAuto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataEstadosAuto.Location = New System.Drawing.Point(3, 110)
         Me.DataEstadosAuto.Name = "DataEstadosAuto"
-        Me.DataEstadosAuto.Size = New System.Drawing.Size(664, 228)
+        Me.DataEstadosAuto.Size = New System.Drawing.Size(664, 244)
         Me.DataEstadosAuto.TabIndex = 10
         '
         'TextDescEstAuto
@@ -309,6 +342,9 @@ Partial Class Catalago
         '
         'TabMarcas
         '
+        Me.TabMarcas.Controls.Add(Me.EliminarMarca)
+        Me.TabMarcas.Controls.Add(Me.GuardarMarca)
+        Me.TabMarcas.Controls.Add(Me.NuevaMarca)
         Me.TabMarcas.Controls.Add(Me.DataMarcas)
         Me.TabMarcas.Controls.Add(Me.TextNombreMarca)
         Me.TabMarcas.Controls.Add(Me.LabelNombreMarca)
@@ -317,10 +353,18 @@ Partial Class Catalago
         Me.TabMarcas.Location = New System.Drawing.Point(4, 22)
         Me.TabMarcas.Name = "TabMarcas"
         Me.TabMarcas.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabMarcas.Size = New System.Drawing.Size(670, 341)
+        Me.TabMarcas.Size = New System.Drawing.Size(670, 386)
         Me.TabMarcas.TabIndex = 1
         Me.TabMarcas.Text = "Marcas"
         Me.TabMarcas.UseVisualStyleBackColor = True
+        '
+        'DataMarcas
+        '
+        Me.DataMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataMarcas.Location = New System.Drawing.Point(3, 110)
+        Me.DataMarcas.Name = "DataMarcas"
+        Me.DataMarcas.Size = New System.Drawing.Size(664, 244)
+        Me.DataMarcas.TabIndex = 6
         '
         'TextNombreMarca
         '
@@ -356,6 +400,9 @@ Partial Class Catalago
         '
         'TabModelos
         '
+        Me.TabModelos.Controls.Add(Me.EliminarModelo)
+        Me.TabModelos.Controls.Add(Me.GuardarModelo)
+        Me.TabModelos.Controls.Add(Me.NuevoModelo)
         Me.TabModelos.Controls.Add(Me.DataModelos)
         Me.TabModelos.Controls.Add(Me.ComboIDMarca)
         Me.TabModelos.Controls.Add(Me.TextNombreModelo)
@@ -365,10 +412,18 @@ Partial Class Catalago
         Me.TabModelos.Controls.Add(Me.LabelIDModelo)
         Me.TabModelos.Location = New System.Drawing.Point(4, 22)
         Me.TabModelos.Name = "TabModelos"
-        Me.TabModelos.Size = New System.Drawing.Size(670, 341)
+        Me.TabModelos.Size = New System.Drawing.Size(670, 386)
         Me.TabModelos.TabIndex = 3
         Me.TabModelos.Text = "Modelos"
         Me.TabModelos.UseVisualStyleBackColor = True
+        '
+        'DataModelos
+        '
+        Me.DataModelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataModelos.Location = New System.Drawing.Point(3, 110)
+        Me.DataModelos.Name = "DataModelos"
+        Me.DataModelos.Size = New System.Drawing.Size(664, 244)
+        Me.DataModelos.TabIndex = 3
         '
         'ComboIDMarca
         '
@@ -421,6 +476,9 @@ Partial Class Catalago
         '
         'TabPrecios
         '
+        Me.TabPrecios.Controls.Add(Me.EliminarPrecio)
+        Me.TabPrecios.Controls.Add(Me.GuardarPrecio)
+        Me.TabPrecios.Controls.Add(Me.NuevoPrecio)
         Me.TabPrecios.Controls.Add(Me.DataPrecios)
         Me.TabPrecios.Controls.Add(Me.TextMontoGarantia)
         Me.TabPrecios.Controls.Add(Me.TextMontoDia)
@@ -432,10 +490,18 @@ Partial Class Catalago
         Me.TabPrecios.Controls.Add(Me.LabelIDPrecio)
         Me.TabPrecios.Location = New System.Drawing.Point(4, 22)
         Me.TabPrecios.Name = "TabPrecios"
-        Me.TabPrecios.Size = New System.Drawing.Size(670, 341)
+        Me.TabPrecios.Size = New System.Drawing.Size(670, 386)
         Me.TabPrecios.TabIndex = 5
         Me.TabPrecios.Text = "Precios"
         Me.TabPrecios.UseVisualStyleBackColor = True
+        '
+        'DataPrecios
+        '
+        Me.DataPrecios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataPrecios.Location = New System.Drawing.Point(3, 111)
+        Me.DataPrecios.Name = "DataPrecios"
+        Me.DataPrecios.Size = New System.Drawing.Size(664, 243)
+        Me.DataPrecios.TabIndex = 6
         '
         'TextMontoGarantia
         '
@@ -504,6 +570,9 @@ Partial Class Catalago
         '
         'TabEstados
         '
+        Me.TabEstados.Controls.Add(Me.EliminarEstado)
+        Me.TabEstados.Controls.Add(Me.GuardarEstado)
+        Me.TabEstados.Controls.Add(Me.NuevoEstado)
         Me.TabEstados.Controls.Add(Me.DataEstados)
         Me.TabEstados.Controls.Add(Me.TextNombreEstado)
         Me.TabEstados.Controls.Add(Me.LabelNombreEstado)
@@ -512,10 +581,18 @@ Partial Class Catalago
         Me.TabEstados.Location = New System.Drawing.Point(4, 22)
         Me.TabEstados.Name = "TabEstados"
         Me.TabEstados.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabEstados.Size = New System.Drawing.Size(670, 341)
+        Me.TabEstados.Size = New System.Drawing.Size(670, 386)
         Me.TabEstados.TabIndex = 0
         Me.TabEstados.Text = "Estados"
         Me.TabEstados.UseVisualStyleBackColor = True
+        '
+        'DataEstados
+        '
+        Me.DataEstados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataEstados.Location = New System.Drawing.Point(3, 110)
+        Me.DataEstados.Name = "DataEstados"
+        Me.DataEstados.Size = New System.Drawing.Size(664, 244)
+        Me.DataEstados.TabIndex = 2
         '
         'TextNombreEstado
         '
@@ -551,6 +628,9 @@ Partial Class Catalago
         '
         'TabCiudades
         '
+        Me.TabCiudades.Controls.Add(Me.EliminarCiudad)
+        Me.TabCiudades.Controls.Add(Me.GuardarCiudad)
+        Me.TabCiudades.Controls.Add(Me.NuevaCiudad)
         Me.TabCiudades.Controls.Add(Me.DataCiudades)
         Me.TabCiudades.Controls.Add(Me.ComboCiudadIDEstado)
         Me.TabCiudades.Controls.Add(Me.TextNombreCiudad)
@@ -560,10 +640,18 @@ Partial Class Catalago
         Me.TabCiudades.Controls.Add(Me.LabelIDCiudad)
         Me.TabCiudades.Location = New System.Drawing.Point(4, 22)
         Me.TabCiudades.Name = "TabCiudades"
-        Me.TabCiudades.Size = New System.Drawing.Size(670, 341)
+        Me.TabCiudades.Size = New System.Drawing.Size(670, 386)
         Me.TabCiudades.TabIndex = 4
         Me.TabCiudades.Text = "Ciudades"
         Me.TabCiudades.UseVisualStyleBackColor = True
+        '
+        'DataCiudades
+        '
+        Me.DataCiudades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataCiudades.Location = New System.Drawing.Point(3, 110)
+        Me.DataCiudades.Name = "DataCiudades"
+        Me.DataCiudades.Size = New System.Drawing.Size(664, 244)
+        Me.DataCiudades.TabIndex = 3
         '
         'ComboCiudadIDEstado
         '
@@ -616,6 +704,9 @@ Partial Class Catalago
         '
         'TabColonias
         '
+        Me.TabColonias.Controls.Add(Me.EliminarColonia)
+        Me.TabColonias.Controls.Add(Me.GuardarColonia)
+        Me.TabColonias.Controls.Add(Me.NuevaColonia)
         Me.TabColonias.Controls.Add(Me.DataColonias)
         Me.TabColonias.Controls.Add(Me.ComboColCiudades)
         Me.TabColonias.Controls.Add(Me.ComboColEstados)
@@ -627,10 +718,18 @@ Partial Class Catalago
         Me.TabColonias.Controls.Add(Me.LabelIDColonia)
         Me.TabColonias.Location = New System.Drawing.Point(4, 22)
         Me.TabColonias.Name = "TabColonias"
-        Me.TabColonias.Size = New System.Drawing.Size(670, 341)
+        Me.TabColonias.Size = New System.Drawing.Size(670, 386)
         Me.TabColonias.TabIndex = 6
         Me.TabColonias.Text = "Colonias"
         Me.TabColonias.UseVisualStyleBackColor = True
+        '
+        'DataColonias
+        '
+        Me.DataColonias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataColonias.Location = New System.Drawing.Point(3, 110)
+        Me.DataColonias.Name = "DataColonias"
+        Me.DataColonias.Size = New System.Drawing.Size(664, 244)
+        Me.DataColonias.TabIndex = 4
         '
         'ComboColCiudades
         '
@@ -700,10 +799,13 @@ Partial Class Catalago
         '
         'TabSucursales
         '
+        Me.TabSucursales.Controls.Add(Me.EliminarSucursal)
+        Me.TabSucursales.Controls.Add(Me.GuardarSucursal)
+        Me.TabSucursales.Controls.Add(Me.NuevaSucursal)
         Me.TabSucursales.Controls.Add(Me.LabelIDSucursal)
         Me.TabSucursales.Location = New System.Drawing.Point(4, 22)
         Me.TabSucursales.Name = "TabSucursales"
-        Me.TabSucursales.Size = New System.Drawing.Size(670, 341)
+        Me.TabSucursales.Size = New System.Drawing.Size(670, 386)
         Me.TabSucursales.TabIndex = 7
         Me.TabSucursales.Text = "Sucursales"
         Me.TabSucursales.UseVisualStyleBackColor = True
@@ -721,7 +823,7 @@ Partial Class Catalago
         '
         Me.TabClientes.Location = New System.Drawing.Point(4, 22)
         Me.TabClientes.Name = "TabClientes"
-        Me.TabClientes.Size = New System.Drawing.Size(670, 341)
+        Me.TabClientes.Size = New System.Drawing.Size(670, 386)
         Me.TabClientes.TabIndex = 8
         Me.TabClientes.Text = "Clientes"
         Me.TabClientes.UseVisualStyleBackColor = True
@@ -730,7 +832,7 @@ Partial Class Catalago
         '
         Me.TabEmpleados.Location = New System.Drawing.Point(4, 22)
         Me.TabEmpleados.Name = "TabEmpleados"
-        Me.TabEmpleados.Size = New System.Drawing.Size(670, 341)
+        Me.TabEmpleados.Size = New System.Drawing.Size(670, 386)
         Me.TabEmpleados.TabIndex = 9
         Me.TabEmpleados.Text = "Empleados"
         Me.TabEmpleados.UseVisualStyleBackColor = True
@@ -739,58 +841,253 @@ Partial Class Catalago
         '
         Me.TabRentas.Location = New System.Drawing.Point(4, 22)
         Me.TabRentas.Name = "TabRentas"
-        Me.TabRentas.Size = New System.Drawing.Size(670, 341)
+        Me.TabRentas.Size = New System.Drawing.Size(670, 386)
         Me.TabRentas.TabIndex = 10
         Me.TabRentas.Text = "Rentas"
         Me.TabRentas.UseVisualStyleBackColor = True
         '
-        'DataMarcas
+        'ButtonNuevoAuto
         '
-        Me.DataMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataMarcas.Location = New System.Drawing.Point(6, 110)
-        Me.DataMarcas.Name = "DataMarcas"
-        Me.DataMarcas.Size = New System.Drawing.Size(661, 225)
-        Me.DataMarcas.TabIndex = 6
+        Me.ButtonNuevoAuto.Location = New System.Drawing.Point(430, 360)
+        Me.ButtonNuevoAuto.Name = "ButtonNuevoAuto"
+        Me.ButtonNuevoAuto.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonNuevoAuto.TabIndex = 8
+        Me.ButtonNuevoAuto.Text = "Nuevo"
+        Me.ButtonNuevoAuto.UseVisualStyleBackColor = True
         '
-        'DataModelos
+        'ButtonGuardarAuto
         '
-        Me.DataModelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataModelos.Location = New System.Drawing.Point(3, 110)
-        Me.DataModelos.Name = "DataModelos"
-        Me.DataModelos.Size = New System.Drawing.Size(664, 228)
-        Me.DataModelos.TabIndex = 3
+        Me.ButtonGuardarAuto.Location = New System.Drawing.Point(511, 360)
+        Me.ButtonGuardarAuto.Name = "ButtonGuardarAuto"
+        Me.ButtonGuardarAuto.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonGuardarAuto.TabIndex = 8
+        Me.ButtonGuardarAuto.Text = "Guardar"
+        Me.ButtonGuardarAuto.UseVisualStyleBackColor = True
         '
-        'DataPrecios
+        'ButtonEliminarAuto
         '
-        Me.DataPrecios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataPrecios.Location = New System.Drawing.Point(3, 111)
-        Me.DataPrecios.Name = "DataPrecios"
-        Me.DataPrecios.Size = New System.Drawing.Size(664, 227)
-        Me.DataPrecios.TabIndex = 6
+        Me.ButtonEliminarAuto.Location = New System.Drawing.Point(592, 360)
+        Me.ButtonEliminarAuto.Name = "ButtonEliminarAuto"
+        Me.ButtonEliminarAuto.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonEliminarAuto.TabIndex = 8
+        Me.ButtonEliminarAuto.Text = "Eliminar"
+        Me.ButtonEliminarAuto.UseVisualStyleBackColor = True
         '
-        'DataEstados
+        'EliminarEstAuto
         '
-        Me.DataEstados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataEstados.Location = New System.Drawing.Point(6, 110)
-        Me.DataEstados.Name = "DataEstados"
-        Me.DataEstados.Size = New System.Drawing.Size(658, 225)
-        Me.DataEstados.TabIndex = 2
+        Me.EliminarEstAuto.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarEstAuto.Name = "EliminarEstAuto"
+        Me.EliminarEstAuto.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarEstAuto.TabIndex = 11
+        Me.EliminarEstAuto.Text = "Eliminar"
+        Me.EliminarEstAuto.UseVisualStyleBackColor = True
         '
-        'DataCiudades
+        'GuardarEstAuto
         '
-        Me.DataCiudades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataCiudades.Location = New System.Drawing.Point(3, 110)
-        Me.DataCiudades.Name = "DataCiudades"
-        Me.DataCiudades.Size = New System.Drawing.Size(664, 228)
-        Me.DataCiudades.TabIndex = 3
+        Me.GuardarEstAuto.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarEstAuto.Name = "GuardarEstAuto"
+        Me.GuardarEstAuto.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarEstAuto.TabIndex = 12
+        Me.GuardarEstAuto.Text = "Guardar"
+        Me.GuardarEstAuto.UseVisualStyleBackColor = True
         '
-        'DataColonias
+        'NuevoEstAuto
         '
-        Me.DataColonias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataColonias.Location = New System.Drawing.Point(3, 110)
-        Me.DataColonias.Name = "DataColonias"
-        Me.DataColonias.Size = New System.Drawing.Size(664, 228)
-        Me.DataColonias.TabIndex = 4
+        Me.NuevoEstAuto.Location = New System.Drawing.Point(430, 360)
+        Me.NuevoEstAuto.Name = "NuevoEstAuto"
+        Me.NuevoEstAuto.Size = New System.Drawing.Size(75, 23)
+        Me.NuevoEstAuto.TabIndex = 13
+        Me.NuevoEstAuto.Text = "Nuevo"
+        Me.NuevoEstAuto.UseVisualStyleBackColor = True
+        '
+        'EliminarMarca
+        '
+        Me.EliminarMarca.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarMarca.Name = "EliminarMarca"
+        Me.EliminarMarca.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarMarca.TabIndex = 9
+        Me.EliminarMarca.Text = "Eliminar"
+        Me.EliminarMarca.UseVisualStyleBackColor = True
+        '
+        'GuardarMarca
+        '
+        Me.GuardarMarca.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarMarca.Name = "GuardarMarca"
+        Me.GuardarMarca.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarMarca.TabIndex = 10
+        Me.GuardarMarca.Text = "Guardar"
+        Me.GuardarMarca.UseVisualStyleBackColor = True
+        '
+        'NuevaMarca
+        '
+        Me.NuevaMarca.Location = New System.Drawing.Point(430, 360)
+        Me.NuevaMarca.Name = "NuevaMarca"
+        Me.NuevaMarca.Size = New System.Drawing.Size(75, 23)
+        Me.NuevaMarca.TabIndex = 11
+        Me.NuevaMarca.Text = "Nuevo"
+        Me.NuevaMarca.UseVisualStyleBackColor = True
+        '
+        'EliminarModelo
+        '
+        Me.EliminarModelo.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarModelo.Name = "EliminarModelo"
+        Me.EliminarModelo.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarModelo.TabIndex = 9
+        Me.EliminarModelo.Text = "Eliminar"
+        Me.EliminarModelo.UseVisualStyleBackColor = True
+        '
+        'GuardarModelo
+        '
+        Me.GuardarModelo.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarModelo.Name = "GuardarModelo"
+        Me.GuardarModelo.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarModelo.TabIndex = 10
+        Me.GuardarModelo.Text = "Guardar"
+        Me.GuardarModelo.UseVisualStyleBackColor = True
+        '
+        'NuevoModelo
+        '
+        Me.NuevoModelo.Location = New System.Drawing.Point(430, 360)
+        Me.NuevoModelo.Name = "NuevoModelo"
+        Me.NuevoModelo.Size = New System.Drawing.Size(75, 23)
+        Me.NuevoModelo.TabIndex = 11
+        Me.NuevoModelo.Text = "Nuevo"
+        Me.NuevoModelo.UseVisualStyleBackColor = True
+        '
+        'EliminarPrecio
+        '
+        Me.EliminarPrecio.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarPrecio.Name = "EliminarPrecio"
+        Me.EliminarPrecio.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarPrecio.TabIndex = 9
+        Me.EliminarPrecio.Text = "Eliminar"
+        Me.EliminarPrecio.UseVisualStyleBackColor = True
+        '
+        'GuardarPrecio
+        '
+        Me.GuardarPrecio.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarPrecio.Name = "GuardarPrecio"
+        Me.GuardarPrecio.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarPrecio.TabIndex = 10
+        Me.GuardarPrecio.Text = "Guardar"
+        Me.GuardarPrecio.UseVisualStyleBackColor = True
+        '
+        'NuevoPrecio
+        '
+        Me.NuevoPrecio.Location = New System.Drawing.Point(430, 360)
+        Me.NuevoPrecio.Name = "NuevoPrecio"
+        Me.NuevoPrecio.Size = New System.Drawing.Size(75, 23)
+        Me.NuevoPrecio.TabIndex = 11
+        Me.NuevoPrecio.Text = "Nuevo"
+        Me.NuevoPrecio.UseVisualStyleBackColor = True
+        '
+        'EliminarEstado
+        '
+        Me.EliminarEstado.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarEstado.Name = "EliminarEstado"
+        Me.EliminarEstado.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarEstado.TabIndex = 9
+        Me.EliminarEstado.Text = "Eliminar"
+        Me.EliminarEstado.UseVisualStyleBackColor = True
+        '
+        'GuardarEstado
+        '
+        Me.GuardarEstado.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarEstado.Name = "GuardarEstado"
+        Me.GuardarEstado.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarEstado.TabIndex = 10
+        Me.GuardarEstado.Text = "Guardar"
+        Me.GuardarEstado.UseVisualStyleBackColor = True
+        '
+        'NuevoEstado
+        '
+        Me.NuevoEstado.Location = New System.Drawing.Point(430, 360)
+        Me.NuevoEstado.Name = "NuevoEstado"
+        Me.NuevoEstado.Size = New System.Drawing.Size(75, 23)
+        Me.NuevoEstado.TabIndex = 11
+        Me.NuevoEstado.Text = "Nuevo"
+        Me.NuevoEstado.UseVisualStyleBackColor = True
+        '
+        'EliminarCiudad
+        '
+        Me.EliminarCiudad.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarCiudad.Name = "EliminarCiudad"
+        Me.EliminarCiudad.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarCiudad.TabIndex = 9
+        Me.EliminarCiudad.Text = "Eliminar"
+        Me.EliminarCiudad.UseVisualStyleBackColor = True
+        '
+        'GuardarCiudad
+        '
+        Me.GuardarCiudad.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarCiudad.Name = "GuardarCiudad"
+        Me.GuardarCiudad.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarCiudad.TabIndex = 10
+        Me.GuardarCiudad.Text = "Guardar"
+        Me.GuardarCiudad.UseVisualStyleBackColor = True
+        '
+        'NuevaCiudad
+        '
+        Me.NuevaCiudad.Location = New System.Drawing.Point(430, 360)
+        Me.NuevaCiudad.Name = "NuevaCiudad"
+        Me.NuevaCiudad.Size = New System.Drawing.Size(75, 23)
+        Me.NuevaCiudad.TabIndex = 11
+        Me.NuevaCiudad.Text = "Nuevo"
+        Me.NuevaCiudad.UseVisualStyleBackColor = True
+        '
+        'EliminarColonia
+        '
+        Me.EliminarColonia.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarColonia.Name = "EliminarColonia"
+        Me.EliminarColonia.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarColonia.TabIndex = 9
+        Me.EliminarColonia.Text = "Eliminar"
+        Me.EliminarColonia.UseVisualStyleBackColor = True
+        '
+        'GuardarColonia
+        '
+        Me.GuardarColonia.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarColonia.Name = "GuardarColonia"
+        Me.GuardarColonia.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarColonia.TabIndex = 10
+        Me.GuardarColonia.Text = "Guardar"
+        Me.GuardarColonia.UseVisualStyleBackColor = True
+        '
+        'NuevaColonia
+        '
+        Me.NuevaColonia.Location = New System.Drawing.Point(430, 360)
+        Me.NuevaColonia.Name = "NuevaColonia"
+        Me.NuevaColonia.Size = New System.Drawing.Size(75, 23)
+        Me.NuevaColonia.TabIndex = 11
+        Me.NuevaColonia.Text = "Nuevo"
+        Me.NuevaColonia.UseVisualStyleBackColor = True
+        '
+        'EliminarSucursal
+        '
+        Me.EliminarSucursal.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarSucursal.Name = "EliminarSucursal"
+        Me.EliminarSucursal.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarSucursal.TabIndex = 9
+        Me.EliminarSucursal.Text = "Eliminar"
+        Me.EliminarSucursal.UseVisualStyleBackColor = True
+        '
+        'GuardarSucursal
+        '
+        Me.GuardarSucursal.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarSucursal.Name = "GuardarSucursal"
+        Me.GuardarSucursal.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarSucursal.TabIndex = 10
+        Me.GuardarSucursal.Text = "Guardar"
+        Me.GuardarSucursal.UseVisualStyleBackColor = True
+        '
+        'NuevaSucursal
+        '
+        Me.NuevaSucursal.Location = New System.Drawing.Point(430, 360)
+        Me.NuevaSucursal.Name = "NuevaSucursal"
+        Me.NuevaSucursal.Size = New System.Drawing.Size(75, 23)
+        Me.NuevaSucursal.TabIndex = 11
+        Me.NuevaSucursal.Text = "Nuevo"
+        Me.NuevaSucursal.UseVisualStyleBackColor = True
         '
         'Catalago
         '
@@ -813,24 +1110,24 @@ Partial Class Catalago
         CType(Me.DataEstadosAuto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabMarcas.ResumeLayout(False)
         Me.TabMarcas.PerformLayout()
+        CType(Me.DataMarcas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabModelos.ResumeLayout(False)
         Me.TabModelos.PerformLayout()
+        CType(Me.DataModelos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPrecios.ResumeLayout(False)
         Me.TabPrecios.PerformLayout()
+        CType(Me.DataPrecios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabEstados.ResumeLayout(False)
         Me.TabEstados.PerformLayout()
+        CType(Me.DataEstados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabCiudades.ResumeLayout(False)
         Me.TabCiudades.PerformLayout()
+        CType(Me.DataCiudades, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabColonias.ResumeLayout(False)
         Me.TabColonias.PerformLayout()
+        CType(Me.DataColonias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabSucursales.ResumeLayout(False)
         Me.TabSucursales.PerformLayout()
-        CType(Me.DataMarcas, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataModelos, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataPrecios, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataEstados, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataCiudades, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataColonias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -906,4 +1203,31 @@ Partial Class Catalago
     Friend WithEvents DataEstados As DataGridView
     Friend WithEvents DataCiudades As DataGridView
     Friend WithEvents DataColonias As DataGridView
+    Friend WithEvents ButtonEliminarAuto As Button
+    Friend WithEvents ButtonGuardarAuto As Button
+    Friend WithEvents ButtonNuevoAuto As Button
+    Friend WithEvents EliminarEstAuto As Button
+    Friend WithEvents GuardarEstAuto As Button
+    Friend WithEvents NuevoEstAuto As Button
+    Friend WithEvents EliminarMarca As Button
+    Friend WithEvents GuardarMarca As Button
+    Friend WithEvents NuevaMarca As Button
+    Friend WithEvents EliminarModelo As Button
+    Friend WithEvents GuardarModelo As Button
+    Friend WithEvents NuevoModelo As Button
+    Friend WithEvents EliminarPrecio As Button
+    Friend WithEvents GuardarPrecio As Button
+    Friend WithEvents NuevoPrecio As Button
+    Friend WithEvents EliminarEstado As Button
+    Friend WithEvents GuardarEstado As Button
+    Friend WithEvents NuevoEstado As Button
+    Friend WithEvents EliminarCiudad As Button
+    Friend WithEvents GuardarCiudad As Button
+    Friend WithEvents NuevaCiudad As Button
+    Friend WithEvents EliminarColonia As Button
+    Friend WithEvents GuardarColonia As Button
+    Friend WithEvents NuevaColonia As Button
+    Friend WithEvents EliminarSucursal As Button
+    Friend WithEvents GuardarSucursal As Button
+    Friend WithEvents NuevaSucursal As Button
 End Class
