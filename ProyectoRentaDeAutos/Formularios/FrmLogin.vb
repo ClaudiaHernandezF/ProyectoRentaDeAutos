@@ -25,7 +25,7 @@ Public Class FrmLogin
         ' Si el usuario y contraseñas son válidos me permite seguir
         If (login.consultaUsuario() = True) Then
             ' Muestra siguiente formulario
-            Frm1.Show()
+            FrmCatalogo.Show()
             ' Cerrar ventana
             ' Me.Close()
             ' Si el usuario o contraseña no son válidos, me envía un mensaje

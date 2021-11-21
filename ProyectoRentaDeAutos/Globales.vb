@@ -22,12 +22,20 @@ Module Globales
     Public idPrecioDiario As Integer
     Public montoDia As String
     Public montoGarantia As Integer
-    Public idEstado As String
-    Public nombreEstado As String
-    Public idCiudad As String
-    Public nombreCiudad As String
-    Public idColonia As String
-    Public nombreColonia As String
+
+    Public id_estado As String
+    Public miEstado As Integer
+    Public id_ciudad As String
+    Public miCiudad As Integer
+    Public id_colonia As String
+    Public miColonia As Integer
+
+    'Public idEstado As String
+    ' Public nombreEstado As String
+    ' Public idCiudad As String
+    ' Public nombreCiudad As String
+    ' Public idColonia As String
+    ' Public nombreColonia As String
     Public idSucursal As String
     Public nombreSucursal As Integer
     Public calle As String

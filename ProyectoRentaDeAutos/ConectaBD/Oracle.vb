@@ -39,7 +39,7 @@ Public Class Oracle
             DA = New OracleDataAdapter(sqlcmd, cnx)
             DT = New DataTable
             DA.Fill(DT)
-            Return DT 'retorna el conjunto de dato
+            Return DT 'retorna el conjunto de datos
         Catch ex As Exception
             Throw New Exception("Error: " & ex.Message)
         End Try

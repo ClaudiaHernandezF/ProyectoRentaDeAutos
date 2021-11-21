@@ -77,10 +77,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ClaseLogin.vb" />
-    <Compile Include="Formularios\Frm1.Designer.vb">
-      <DependentUpon>Frm1.vb</DependentUpon>
+    <Compile Include="Clases\ClaseCiudades.vb" />
+    <Compile Include="Clases\ClaseColonias.vb" />
+    <Compile Include="Clases\ClaseEstados.vb" />
+    <Compile Include="Formularios\FrmCatalogo.Designer.vb">
+      <DependentUpon>FrmCatalogo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm1.vb">
+    <Compile Include="Formularios\FrmCatalogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEstados.Designer.vb">
+      <DependentUpon>FrmEstados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmEstados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCiudades.Designer.vb">
+      <DependentUpon>FrmCiudades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCiudades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmColonias.Designer.vb">
+      <DependentUpon>FrmColonias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmColonias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCatalogoP.Designer.vb">
+      <DependentUpon>FrmCatalogoP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCatalogoP.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmLogin.vb">
@@ -109,8 +136,20 @@
     <Compile Include="ConectaBD\Oracle.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\Frm1.resx">
-      <DependentUpon>Frm1.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmCatalogo.resx">
+      <DependentUpon>FrmCatalogo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCiudades.resx">
+      <DependentUpon>FrmCiudades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmColonias.resx">
+      <DependentUpon>FrmColonias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCatalogoP.resx">
+      <DependentUpon>FrmCatalogoP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEstados.resx">
+      <DependentUpon>FrmEstados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
