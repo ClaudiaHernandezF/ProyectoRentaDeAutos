@@ -35,7 +35,7 @@ Partial Class Catalago
         Me.LabelCapacidad = New System.Windows.Forms.Label()
         Me.TextPlaca = New System.Windows.Forms.TextBox()
         Me.LabelAutoEstAuto = New System.Windows.Forms.Label()
-        Me.LabelAutoMarca = New System.Windows.Forms.Label()
+        Me.LabelAutoModelo = New System.Windows.Forms.Label()
         Me.LabelPlaca = New System.Windows.Forms.Label()
         Me.DataAutos = New System.Windows.Forms.DataGridView()
         Me.TabEstAuto = New System.Windows.Forms.TabPage()
@@ -67,19 +67,6 @@ Partial Class Catalago
         Me.TextIDModelo = New System.Windows.Forms.TextBox()
         Me.LabelModeloIDMarca = New System.Windows.Forms.Label()
         Me.LabelIDModelo = New System.Windows.Forms.Label()
-        Me.TabPrecios = New System.Windows.Forms.TabPage()
-        Me.EliminarPrecio = New System.Windows.Forms.Button()
-        Me.GuardarPrecio = New System.Windows.Forms.Button()
-        Me.NuevoPrecio = New System.Windows.Forms.Button()
-        Me.DataPrecios = New System.Windows.Forms.DataGridView()
-        Me.TextMontoGarantia = New System.Windows.Forms.TextBox()
-        Me.TextMontoDia = New System.Windows.Forms.TextBox()
-        Me.LabelPrecioModelo = New System.Windows.Forms.Label()
-        Me.ComboPreciosIDModelo = New System.Windows.Forms.ComboBox()
-        Me.LabelMontoGarantia = New System.Windows.Forms.Label()
-        Me.LabelMontoDia = New System.Windows.Forms.Label()
-        Me.TextIDPrecio = New System.Windows.Forms.TextBox()
-        Me.LabelIDPrecio = New System.Windows.Forms.Label()
         Me.TabEstados = New System.Windows.Forms.TabPage()
         Me.EliminarEstado = New System.Windows.Forms.Button()
         Me.GuardarEstado = New System.Windows.Forms.Button()
@@ -109,7 +96,7 @@ Partial Class Catalago
         Me.ComboColEstados = New System.Windows.Forms.ComboBox()
         Me.LabelColCiudad = New System.Windows.Forms.Label()
         Me.LabelColEstado = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextNombreColonia = New System.Windows.Forms.TextBox()
         Me.TextIDColonia = New System.Windows.Forms.TextBox()
         Me.LabelNombreColonia = New System.Windows.Forms.Label()
         Me.LabelIDColonia = New System.Windows.Forms.Label()
@@ -119,43 +106,95 @@ Partial Class Catalago
         Me.NuevaSucursal = New System.Windows.Forms.Button()
         Me.LabelIDSucursal = New System.Windows.Forms.Label()
         Me.TabClientes = New System.Windows.Forms.TabPage()
+        Me.ComboClienteCiudad = New System.Windows.Forms.ComboBox()
+        Me.ComboColoniaCLiente = New System.Windows.Forms.ComboBox()
         Me.DGVClientes = New System.Windows.Forms.DataGridView()
         Me.EliminarCliente = New System.Windows.Forms.Button()
         Me.GuardarCliente = New System.Windows.Forms.Button()
         Me.NuevoCliente = New System.Windows.Forms.Button()
+        Me.TextCorreoCliente = New System.Windows.Forms.TextBox()
+        Me.TextNoCasaCliente = New System.Windows.Forms.TextBox()
         Me.TextApellidoMCliente = New System.Windows.Forms.TextBox()
+        Me.TextEstadoCliente = New System.Windows.Forms.TextBox()
+        Me.TextCalleCLiente = New System.Windows.Forms.TextBox()
+        Me.TextTelCliente = New System.Windows.Forms.TextBox()
         Me.TextApellidoPCliente = New System.Windows.Forms.TextBox()
+        Me.LabelCiudadCliente = New System.Windows.Forms.Label()
         Me.TextNombreCliente = New System.Windows.Forms.TextBox()
+        Me.LabelColoniaCLiente = New System.Windows.Forms.Label()
+        Me.LabelCorreoCliente = New System.Windows.Forms.Label()
         Me.LabelApellidoMCliente = New System.Windows.Forms.Label()
+        Me.LabelNoCasaCliente = New System.Windows.Forms.Label()
+        Me.LabelEstadoCLiente = New System.Windows.Forms.Label()
         Me.TextnoLicencia = New System.Windows.Forms.TextBox()
+        Me.LabelCalleCliente = New System.Windows.Forms.Label()
+        Me.LabelTelCLiente = New System.Windows.Forms.Label()
         Me.LabelApellidoPCliente = New System.Windows.Forms.Label()
         Me.LabelNombre = New System.Windows.Forms.Label()
         Me.LabelLicencia = New System.Windows.Forms.Label()
         Me.TabEmpleados = New System.Windows.Forms.TabPage()
         Me.TabRentas = New System.Windows.Forms.TabPage()
-        Me.LabelTelCLiente = New System.Windows.Forms.Label()
-        Me.LabelCorreoCliente = New System.Windows.Forms.Label()
-        Me.TextTelCliente = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.LabelCalleCliente = New System.Windows.Forms.Label()
-        Me.LabelColoniaCLiente = New System.Windows.Forms.Label()
-        Me.TextCalleCLiente = New System.Windows.Forms.TextBox()
-        Me.ComboColoniaCLiente = New System.Windows.Forms.ComboBox()
-        Me.LabelNoCasaCliente = New System.Windows.Forms.Label()
-        Me.LabelCiudadCliente = New System.Windows.Forms.Label()
-        Me.TextNoCasaCliente = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.LabelEstadoCLiente = New System.Windows.Forms.Label()
-        Me.TextEstadoCliente = New System.Windows.Forms.TextBox()
         Me.TabLogin = New System.Windows.Forms.TabPage()
-        Me.LabelidAdmin = New System.Windows.Forms.Label()
-        Me.TextIDAdmin = New System.Windows.Forms.TextBox()
-        Me.LabelContrasena = New System.Windows.Forms.Label()
-        Me.TextContraseña = New System.Windows.Forms.TextBox()
-        Me.DGVAdmins = New System.Windows.Forms.DataGridView()
         Me.EliminarAdmin = New System.Windows.Forms.Button()
         Me.GuardarAdmin = New System.Windows.Forms.Button()
         Me.NuevoAdmin = New System.Windows.Forms.Button()
+        Me.DGVAdmins = New System.Windows.Forms.DataGridView()
+        Me.TextContraseña = New System.Windows.Forms.TextBox()
+        Me.TextIDAdmin = New System.Windows.Forms.TextBox()
+        Me.LabelContrasena = New System.Windows.Forms.Label()
+        Me.LabelidAdmin = New System.Windows.Forms.Label()
+        Me.LabelPrecioDIa = New System.Windows.Forms.Label()
+        Me.TextPrecioDia = New System.Windows.Forms.TextBox()
+        Me.LabelPrecioGarantia = New System.Windows.Forms.Label()
+        Me.TextPrecioGarantia = New System.Windows.Forms.TextBox()
+        Me.TextIDSucursal = New System.Windows.Forms.TextBox()
+        Me.LabelNombreSucursal = New System.Windows.Forms.Label()
+        Me.TextNombreSucursal = New System.Windows.Forms.TextBox()
+        Me.LabelSucIDEstado = New System.Windows.Forms.Label()
+        Me.ComboEstadoSucursal = New System.Windows.Forms.ComboBox()
+        Me.LabelCiudadSucursal = New System.Windows.Forms.Label()
+        Me.ComboCiudadSucursal = New System.Windows.Forms.ComboBox()
+        Me.LabelColSucursal = New System.Windows.Forms.Label()
+        Me.ComboColoniaSucursal = New System.Windows.Forms.ComboBox()
+        Me.LabelCalleSucursal = New System.Windows.Forms.Label()
+        Me.TextCalleSucursal = New System.Windows.Forms.TextBox()
+        Me.DGVSucursal = New System.Windows.Forms.DataGridView()
+        Me.ComboIDSucursal = New System.Windows.Forms.ComboBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.EliminarEmpleado = New System.Windows.Forms.Button()
+        Me.GuardarEmpleado = New System.Windows.Forms.Button()
+        Me.NuevoEmpleado = New System.Windows.Forms.Button()
+        Me.TextCorreoEmpleado = New System.Windows.Forms.TextBox()
+        Me.TextApellidoMEmpleado = New System.Windows.Forms.TextBox()
+        Me.TextTelEmpleado = New System.Windows.Forms.TextBox()
+        Me.TextApellidoPEmpleado = New System.Windows.Forms.TextBox()
+        Me.TextNombreEmpleado = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LabelCorreoEmpleado = New System.Windows.Forms.Label()
+        Me.LabelApellidoMEmpleado = New System.Windows.Forms.Label()
+        Me.TextUsuarioEmpleado = New System.Windows.Forms.TextBox()
+        Me.LabelTelEmpleado = New System.Windows.Forms.Label()
+        Me.LabelApellidoPEmpleado = New System.Windows.Forms.Label()
+        Me.LabelNombreEmpleado = New System.Windows.Forms.Label()
+        Me.LabelUsuario = New System.Windows.Forms.Label()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.EliminarRenta = New System.Windows.Forms.Button()
+        Me.GuardarRenta = New System.Windows.Forms.Button()
+        Me.NuevaRenta = New System.Windows.Forms.Button()
+        Me.LabelDiasRenta = New System.Windows.Forms.Label()
+        Me.LabelFechaDevolucion = New System.Windows.Forms.Label()
+        Me.LabelLicenciaRenta = New System.Windows.Forms.Label()
+        Me.TextIDRenta = New System.Windows.Forms.TextBox()
+        Me.LabelFechaPRenta = New System.Windows.Forms.Label()
+        Me.LabelEmpleadoRenta = New System.Windows.Forms.Label()
+        Me.LabelPlacaRenta = New System.Windows.Forms.Label()
+        Me.LabelIDRenta = New System.Windows.Forms.Label()
+        Me.ComboPlacaRenta = New System.Windows.Forms.ComboBox()
+        Me.ComboEmpleadoRenta = New System.Windows.Forms.ComboBox()
+        Me.ComboLicenciaRenta = New System.Windows.Forms.ComboBox()
+        Me.DateFechaPrestamo = New System.Windows.Forms.DateTimePicker()
+        Me.DateFechaDevolucion = New System.Windows.Forms.DateTimePicker()
+        Me.TextDiasRenta = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TablasPestanas.SuspendLayout()
         Me.TabAutos.SuspendLayout()
@@ -166,8 +205,6 @@ Partial Class Catalago
         CType(Me.DataMarcas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabModelos.SuspendLayout()
         CType(Me.DataModelos, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPrecios.SuspendLayout()
-        CType(Me.DataPrecios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabEstados.SuspendLayout()
         CType(Me.DataEstados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabCiudades.SuspendLayout()
@@ -177,8 +214,13 @@ Partial Class Catalago
         Me.TabSucursales.SuspendLayout()
         Me.TabClientes.SuspendLayout()
         CType(Me.DGVClientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabEmpleados.SuspendLayout()
+        Me.TabRentas.SuspendLayout()
         Me.TabLogin.SuspendLayout()
         CType(Me.DGVAdmins, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVSucursal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -199,7 +241,6 @@ Partial Class Catalago
         Me.TablasPestanas.Controls.Add(Me.TabEstAuto)
         Me.TablasPestanas.Controls.Add(Me.TabMarcas)
         Me.TablasPestanas.Controls.Add(Me.TabModelos)
-        Me.TablasPestanas.Controls.Add(Me.TabPrecios)
         Me.TablasPestanas.Controls.Add(Me.TabEstados)
         Me.TablasPestanas.Controls.Add(Me.TabCiudades)
         Me.TablasPestanas.Controls.Add(Me.TabColonias)
@@ -226,7 +267,7 @@ Partial Class Catalago
         Me.TabAutos.Controls.Add(Me.LabelCapacidad)
         Me.TabAutos.Controls.Add(Me.TextPlaca)
         Me.TabAutos.Controls.Add(Me.LabelAutoEstAuto)
-        Me.TabAutos.Controls.Add(Me.LabelAutoMarca)
+        Me.TabAutos.Controls.Add(Me.LabelAutoModelo)
         Me.TabAutos.Controls.Add(Me.LabelPlaca)
         Me.TabAutos.Controls.Add(Me.DataAutos)
         Me.TabAutos.Location = New System.Drawing.Point(4, 22)
@@ -321,14 +362,14 @@ Partial Class Catalago
         Me.LabelAutoEstAuto.TabIndex = 4
         Me.LabelAutoEstAuto.Text = "Estado"
         '
-        'LabelAutoMarca
+        'LabelAutoModelo
         '
-        Me.LabelAutoMarca.AutoSize = True
-        Me.LabelAutoMarca.Location = New System.Drawing.Point(183, 20)
-        Me.LabelAutoMarca.Name = "LabelAutoMarca"
-        Me.LabelAutoMarca.Size = New System.Drawing.Size(37, 13)
-        Me.LabelAutoMarca.TabIndex = 4
-        Me.LabelAutoMarca.Text = "Marca"
+        Me.LabelAutoModelo.AutoSize = True
+        Me.LabelAutoModelo.Location = New System.Drawing.Point(183, 20)
+        Me.LabelAutoModelo.Name = "LabelAutoModelo"
+        Me.LabelAutoModelo.Size = New System.Drawing.Size(42, 13)
+        Me.LabelAutoModelo.TabIndex = 4
+        Me.LabelAutoModelo.Text = "Modelo"
         '
         'LabelPlaca
         '
@@ -526,9 +567,13 @@ Partial Class Catalago
         Me.TabModelos.Controls.Add(Me.NuevoModelo)
         Me.TabModelos.Controls.Add(Me.DataModelos)
         Me.TabModelos.Controls.Add(Me.ComboIDMarca)
+        Me.TabModelos.Controls.Add(Me.TextPrecioDia)
+        Me.TabModelos.Controls.Add(Me.LabelPrecioDIa)
         Me.TabModelos.Controls.Add(Me.TextNombreModelo)
+        Me.TabModelos.Controls.Add(Me.TextPrecioGarantia)
         Me.TabModelos.Controls.Add(Me.LabelNombreModelo)
         Me.TabModelos.Controls.Add(Me.TextIDModelo)
+        Me.TabModelos.Controls.Add(Me.LabelPrecioGarantia)
         Me.TabModelos.Controls.Add(Me.LabelModeloIDMarca)
         Me.TabModelos.Controls.Add(Me.LabelIDModelo)
         Me.TabModelos.Location = New System.Drawing.Point(4, 22)
@@ -609,9 +654,9 @@ Partial Class Catalago
         Me.LabelModeloIDMarca.AutoSize = True
         Me.LabelModeloIDMarca.Location = New System.Drawing.Point(183, 20)
         Me.LabelModeloIDMarca.Name = "LabelModeloIDMarca"
-        Me.LabelModeloIDMarca.Size = New System.Drawing.Size(51, 13)
+        Me.LabelModeloIDMarca.Size = New System.Drawing.Size(37, 13)
         Me.LabelModeloIDMarca.TabIndex = 0
-        Me.LabelModeloIDMarca.Text = "ID Marca"
+        Me.LabelModeloIDMarca.Text = "Marca"
         '
         'LabelIDModelo
         '
@@ -621,127 +666,6 @@ Partial Class Catalago
         Me.LabelIDModelo.Size = New System.Drawing.Size(56, 13)
         Me.LabelIDModelo.TabIndex = 0
         Me.LabelIDModelo.Text = "ID Modelo"
-        '
-        'TabPrecios
-        '
-        Me.TabPrecios.Controls.Add(Me.EliminarPrecio)
-        Me.TabPrecios.Controls.Add(Me.GuardarPrecio)
-        Me.TabPrecios.Controls.Add(Me.NuevoPrecio)
-        Me.TabPrecios.Controls.Add(Me.DataPrecios)
-        Me.TabPrecios.Controls.Add(Me.TextMontoGarantia)
-        Me.TabPrecios.Controls.Add(Me.TextMontoDia)
-        Me.TabPrecios.Controls.Add(Me.LabelPrecioModelo)
-        Me.TabPrecios.Controls.Add(Me.ComboPreciosIDModelo)
-        Me.TabPrecios.Controls.Add(Me.LabelMontoGarantia)
-        Me.TabPrecios.Controls.Add(Me.LabelMontoDia)
-        Me.TabPrecios.Controls.Add(Me.TextIDPrecio)
-        Me.TabPrecios.Controls.Add(Me.LabelIDPrecio)
-        Me.TabPrecios.Location = New System.Drawing.Point(4, 22)
-        Me.TabPrecios.Name = "TabPrecios"
-        Me.TabPrecios.Size = New System.Drawing.Size(670, 386)
-        Me.TabPrecios.TabIndex = 5
-        Me.TabPrecios.Text = "Precios"
-        Me.TabPrecios.UseVisualStyleBackColor = True
-        '
-        'EliminarPrecio
-        '
-        Me.EliminarPrecio.Location = New System.Drawing.Point(592, 360)
-        Me.EliminarPrecio.Name = "EliminarPrecio"
-        Me.EliminarPrecio.Size = New System.Drawing.Size(75, 23)
-        Me.EliminarPrecio.TabIndex = 9
-        Me.EliminarPrecio.Text = "Eliminar"
-        Me.EliminarPrecio.UseVisualStyleBackColor = True
-        '
-        'GuardarPrecio
-        '
-        Me.GuardarPrecio.Location = New System.Drawing.Point(511, 360)
-        Me.GuardarPrecio.Name = "GuardarPrecio"
-        Me.GuardarPrecio.Size = New System.Drawing.Size(75, 23)
-        Me.GuardarPrecio.TabIndex = 10
-        Me.GuardarPrecio.Text = "Guardar"
-        Me.GuardarPrecio.UseVisualStyleBackColor = True
-        '
-        'NuevoPrecio
-        '
-        Me.NuevoPrecio.Location = New System.Drawing.Point(430, 360)
-        Me.NuevoPrecio.Name = "NuevoPrecio"
-        Me.NuevoPrecio.Size = New System.Drawing.Size(75, 23)
-        Me.NuevoPrecio.TabIndex = 11
-        Me.NuevoPrecio.Text = "Nuevo"
-        Me.NuevoPrecio.UseVisualStyleBackColor = True
-        '
-        'DataPrecios
-        '
-        Me.DataPrecios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataPrecios.Location = New System.Drawing.Point(3, 111)
-        Me.DataPrecios.Name = "DataPrecios"
-        Me.DataPrecios.Size = New System.Drawing.Size(664, 243)
-        Me.DataPrecios.TabIndex = 6
-        '
-        'TextMontoGarantia
-        '
-        Me.TextMontoGarantia.Location = New System.Drawing.Point(165, 85)
-        Me.TextMontoGarantia.Name = "TextMontoGarantia"
-        Me.TextMontoGarantia.Size = New System.Drawing.Size(124, 20)
-        Me.TextMontoGarantia.TabIndex = 5
-        '
-        'TextMontoDia
-        '
-        Me.TextMontoDia.Location = New System.Drawing.Point(30, 85)
-        Me.TextMontoDia.Name = "TextMontoDia"
-        Me.TextMontoDia.Size = New System.Drawing.Size(100, 20)
-        Me.TextMontoDia.TabIndex = 5
-        '
-        'LabelPrecioModelo
-        '
-        Me.LabelPrecioModelo.AutoSize = True
-        Me.LabelPrecioModelo.Location = New System.Drawing.Point(165, 20)
-        Me.LabelPrecioModelo.Name = "LabelPrecioModelo"
-        Me.LabelPrecioModelo.Size = New System.Drawing.Size(42, 13)
-        Me.LabelPrecioModelo.TabIndex = 4
-        Me.LabelPrecioModelo.Text = "Modelo"
-        '
-        'ComboPreciosIDModelo
-        '
-        Me.ComboPreciosIDModelo.FormattingEnabled = True
-        Me.ComboPreciosIDModelo.Location = New System.Drawing.Point(168, 36)
-        Me.ComboPreciosIDModelo.Name = "ComboPreciosIDModelo"
-        Me.ComboPreciosIDModelo.Size = New System.Drawing.Size(121, 21)
-        Me.ComboPreciosIDModelo.TabIndex = 3
-        '
-        'LabelMontoGarantia
-        '
-        Me.LabelMontoGarantia.AutoSize = True
-        Me.LabelMontoGarantia.Location = New System.Drawing.Point(165, 68)
-        Me.LabelMontoGarantia.Name = "LabelMontoGarantia"
-        Me.LabelMontoGarantia.Size = New System.Drawing.Size(95, 13)
-        Me.LabelMontoGarantia.TabIndex = 2
-        Me.LabelMontoGarantia.Text = "Monto de garantía"
-        '
-        'LabelMontoDia
-        '
-        Me.LabelMontoDia.AutoSize = True
-        Me.LabelMontoDia.Location = New System.Drawing.Point(30, 68)
-        Me.LabelMontoDia.Name = "LabelMontoDia"
-        Me.LabelMontoDia.Size = New System.Drawing.Size(71, 13)
-        Me.LabelMontoDia.TabIndex = 2
-        Me.LabelMontoDia.Text = "Monto de día"
-        '
-        'TextIDPrecio
-        '
-        Me.TextIDPrecio.Location = New System.Drawing.Point(30, 36)
-        Me.TextIDPrecio.Name = "TextIDPrecio"
-        Me.TextIDPrecio.Size = New System.Drawing.Size(100, 20)
-        Me.TextIDPrecio.TabIndex = 1
-        '
-        'LabelIDPrecio
-        '
-        Me.LabelIDPrecio.AutoSize = True
-        Me.LabelIDPrecio.Location = New System.Drawing.Point(30, 20)
-        Me.LabelIDPrecio.Name = "LabelIDPrecio"
-        Me.LabelIDPrecio.Size = New System.Drawing.Size(79, 13)
-        Me.LabelIDPrecio.TabIndex = 0
-        Me.LabelIDPrecio.Text = "ID Precio diario"
         '
         'TabEstados
         '
@@ -918,9 +842,9 @@ Partial Class Catalago
         Me.LabelCiudadesIDEstado.AutoSize = True
         Me.LabelCiudadesIDEstado.Location = New System.Drawing.Point(183, 20)
         Me.LabelCiudadesIDEstado.Name = "LabelCiudadesIDEstado"
-        Me.LabelCiudadesIDEstado.Size = New System.Drawing.Size(54, 13)
+        Me.LabelCiudadesIDEstado.Size = New System.Drawing.Size(40, 13)
         Me.LabelCiudadesIDEstado.TabIndex = 0
-        Me.LabelCiudadesIDEstado.Text = "ID Estado"
+        Me.LabelCiudadesIDEstado.Text = "Estado"
         '
         'LabelIDCiudad
         '
@@ -941,7 +865,7 @@ Partial Class Catalago
         Me.TabColonias.Controls.Add(Me.ComboColEstados)
         Me.TabColonias.Controls.Add(Me.LabelColCiudad)
         Me.TabColonias.Controls.Add(Me.LabelColEstado)
-        Me.TabColonias.Controls.Add(Me.TextBox1)
+        Me.TabColonias.Controls.Add(Me.TextNombreColonia)
         Me.TabColonias.Controls.Add(Me.TextIDColonia)
         Me.TabColonias.Controls.Add(Me.LabelNombreColonia)
         Me.TabColonias.Controls.Add(Me.LabelIDColonia)
@@ -1021,12 +945,12 @@ Partial Class Catalago
         Me.LabelColEstado.TabIndex = 2
         Me.LabelColEstado.Text = "Estado"
         '
-        'TextBox1
+        'TextNombreColonia
         '
-        Me.TextBox1.Location = New System.Drawing.Point(33, 84)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TextNombreColonia.Location = New System.Drawing.Point(33, 84)
+        Me.TextNombreColonia.Name = "TextNombreColonia"
+        Me.TextNombreColonia.Size = New System.Drawing.Size(100, 20)
+        Me.TextNombreColonia.TabIndex = 1
         '
         'TextIDColonia
         '
@@ -1055,9 +979,21 @@ Partial Class Catalago
         '
         'TabSucursales
         '
+        Me.TabSucursales.Controls.Add(Me.DGVSucursal)
+        Me.TabSucursales.Controls.Add(Me.ComboCiudadSucursal)
+        Me.TabSucursales.Controls.Add(Me.ComboColoniaSucursal)
+        Me.TabSucursales.Controls.Add(Me.ComboEstadoSucursal)
+        Me.TabSucursales.Controls.Add(Me.LabelColSucursal)
+        Me.TabSucursales.Controls.Add(Me.LabelCiudadSucursal)
+        Me.TabSucursales.Controls.Add(Me.LabelSucIDEstado)
+        Me.TabSucursales.Controls.Add(Me.TextCalleSucursal)
+        Me.TabSucursales.Controls.Add(Me.TextNombreSucursal)
+        Me.TabSucursales.Controls.Add(Me.TextIDSucursal)
         Me.TabSucursales.Controls.Add(Me.EliminarSucursal)
         Me.TabSucursales.Controls.Add(Me.GuardarSucursal)
+        Me.TabSucursales.Controls.Add(Me.LabelCalleSucursal)
         Me.TabSucursales.Controls.Add(Me.NuevaSucursal)
+        Me.TabSucursales.Controls.Add(Me.LabelNombreSucursal)
         Me.TabSucursales.Controls.Add(Me.LabelIDSucursal)
         Me.TabSucursales.Location = New System.Drawing.Point(4, 22)
         Me.TabSucursales.Name = "TabSucursales"
@@ -1096,7 +1032,7 @@ Partial Class Catalago
         'LabelIDSucursal
         '
         Me.LabelIDSucursal.AutoSize = True
-        Me.LabelIDSucursal.Location = New System.Drawing.Point(33, 27)
+        Me.LabelIDSucursal.Location = New System.Drawing.Point(30, 20)
         Me.LabelIDSucursal.Name = "LabelIDSucursal"
         Me.LabelIDSucursal.Size = New System.Drawing.Size(62, 13)
         Me.LabelIDSucursal.TabIndex = 0
@@ -1104,13 +1040,13 @@ Partial Class Catalago
         '
         'TabClientes
         '
-        Me.TabClientes.Controls.Add(Me.ComboBox1)
+        Me.TabClientes.Controls.Add(Me.ComboClienteCiudad)
         Me.TabClientes.Controls.Add(Me.ComboColoniaCLiente)
         Me.TabClientes.Controls.Add(Me.DGVClientes)
         Me.TabClientes.Controls.Add(Me.EliminarCliente)
         Me.TabClientes.Controls.Add(Me.GuardarCliente)
         Me.TabClientes.Controls.Add(Me.NuevoCliente)
-        Me.TabClientes.Controls.Add(Me.TextBox3)
+        Me.TabClientes.Controls.Add(Me.TextCorreoCliente)
         Me.TabClientes.Controls.Add(Me.TextNoCasaCliente)
         Me.TabClientes.Controls.Add(Me.TextApellidoMCliente)
         Me.TabClientes.Controls.Add(Me.TextEstadoCliente)
@@ -1136,6 +1072,22 @@ Partial Class Catalago
         Me.TabClientes.TabIndex = 8
         Me.TabClientes.Text = "Clientes"
         Me.TabClientes.UseVisualStyleBackColor = True
+        '
+        'ComboClienteCiudad
+        '
+        Me.ComboClienteCiudad.FormattingEnabled = True
+        Me.ComboClienteCiudad.Location = New System.Drawing.Point(497, 83)
+        Me.ComboClienteCiudad.Name = "ComboClienteCiudad"
+        Me.ComboClienteCiudad.Size = New System.Drawing.Size(100, 21)
+        Me.ComboClienteCiudad.TabIndex = 16
+        '
+        'ComboColoniaCLiente
+        '
+        Me.ComboColoniaCLiente.FormattingEnabled = True
+        Me.ComboColoniaCLiente.Location = New System.Drawing.Point(382, 84)
+        Me.ComboColoniaCLiente.Name = "ComboColoniaCLiente"
+        Me.ComboColoniaCLiente.Size = New System.Drawing.Size(100, 21)
+        Me.ComboColoniaCLiente.TabIndex = 16
         '
         'DGVClientes
         '
@@ -1172,12 +1124,47 @@ Partial Class Catalago
         Me.NuevoCliente.Text = "Nuevo"
         Me.NuevoCliente.UseVisualStyleBackColor = True
         '
+        'TextCorreoCliente
+        '
+        Me.TextCorreoCliente.Location = New System.Drawing.Point(266, 84)
+        Me.TextCorreoCliente.Name = "TextCorreoCliente"
+        Me.TextCorreoCliente.Size = New System.Drawing.Size(100, 20)
+        Me.TextCorreoCliente.TabIndex = 1
+        '
+        'TextNoCasaCliente
+        '
+        Me.TextNoCasaCliente.Location = New System.Drawing.Point(616, 37)
+        Me.TextNoCasaCliente.Name = "TextNoCasaCliente"
+        Me.TextNoCasaCliente.Size = New System.Drawing.Size(35, 20)
+        Me.TextNoCasaCliente.TabIndex = 1
+        '
         'TextApellidoMCliente
         '
         Me.TextApellidoMCliente.Location = New System.Drawing.Point(151, 84)
         Me.TextApellidoMCliente.Name = "TextApellidoMCliente"
         Me.TextApellidoMCliente.Size = New System.Drawing.Size(100, 20)
         Me.TextApellidoMCliente.TabIndex = 1
+        '
+        'TextEstadoCliente
+        '
+        Me.TextEstadoCliente.Location = New System.Drawing.Point(497, 37)
+        Me.TextEstadoCliente.Name = "TextEstadoCliente"
+        Me.TextEstadoCliente.Size = New System.Drawing.Size(100, 20)
+        Me.TextEstadoCliente.TabIndex = 1
+        '
+        'TextCalleCLiente
+        '
+        Me.TextCalleCLiente.Location = New System.Drawing.Point(382, 37)
+        Me.TextCalleCLiente.Name = "TextCalleCLiente"
+        Me.TextCalleCLiente.Size = New System.Drawing.Size(100, 20)
+        Me.TextCalleCLiente.TabIndex = 1
+        '
+        'TextTelCliente
+        '
+        Me.TextTelCliente.Location = New System.Drawing.Point(266, 37)
+        Me.TextTelCliente.Name = "TextTelCliente"
+        Me.TextTelCliente.Size = New System.Drawing.Size(100, 20)
+        Me.TextTelCliente.TabIndex = 1
         '
         'TextApellidoPCliente
         '
@@ -1186,12 +1173,39 @@ Partial Class Catalago
         Me.TextApellidoPCliente.Size = New System.Drawing.Size(100, 20)
         Me.TextApellidoPCliente.TabIndex = 1
         '
+        'LabelCiudadCliente
+        '
+        Me.LabelCiudadCliente.AutoSize = True
+        Me.LabelCiudadCliente.Location = New System.Drawing.Point(494, 67)
+        Me.LabelCiudadCliente.Name = "LabelCiudadCliente"
+        Me.LabelCiudadCliente.Size = New System.Drawing.Size(40, 13)
+        Me.LabelCiudadCliente.TabIndex = 0
+        Me.LabelCiudadCliente.Text = "Ciudad"
+        '
         'TextNombreCliente
         '
         Me.TextNombreCliente.Location = New System.Drawing.Point(33, 84)
         Me.TextNombreCliente.Name = "TextNombreCliente"
         Me.TextNombreCliente.Size = New System.Drawing.Size(100, 20)
         Me.TextNombreCliente.TabIndex = 1
+        '
+        'LabelColoniaCLiente
+        '
+        Me.LabelColoniaCLiente.AutoSize = True
+        Me.LabelColoniaCLiente.Location = New System.Drawing.Point(379, 68)
+        Me.LabelColoniaCLiente.Name = "LabelColoniaCLiente"
+        Me.LabelColoniaCLiente.Size = New System.Drawing.Size(42, 13)
+        Me.LabelColoniaCLiente.TabIndex = 0
+        Me.LabelColoniaCLiente.Text = "Colonia"
+        '
+        'LabelCorreoCliente
+        '
+        Me.LabelCorreoCliente.AutoSize = True
+        Me.LabelCorreoCliente.Location = New System.Drawing.Point(263, 68)
+        Me.LabelCorreoCliente.Name = "LabelCorreoCliente"
+        Me.LabelCorreoCliente.Size = New System.Drawing.Size(93, 13)
+        Me.LabelCorreoCliente.TabIndex = 0
+        Me.LabelCorreoCliente.Text = "Correo electrónico"
         '
         'LabelApellidoMCliente
         '
@@ -1202,12 +1216,48 @@ Partial Class Catalago
         Me.LabelApellidoMCliente.TabIndex = 0
         Me.LabelApellidoMCliente.Text = "Apellido materno"
         '
+        'LabelNoCasaCliente
+        '
+        Me.LabelNoCasaCliente.AutoSize = True
+        Me.LabelNoCasaCliente.Location = New System.Drawing.Point(613, 20)
+        Me.LabelNoCasaCliente.Name = "LabelNoCasaCliente"
+        Me.LabelNoCasaCliente.Size = New System.Drawing.Size(38, 13)
+        Me.LabelNoCasaCliente.TabIndex = 0
+        Me.LabelNoCasaCliente.Text = "#Casa"
+        '
+        'LabelEstadoCLiente
+        '
+        Me.LabelEstadoCLiente.AutoSize = True
+        Me.LabelEstadoCLiente.Location = New System.Drawing.Point(494, 20)
+        Me.LabelEstadoCLiente.Name = "LabelEstadoCLiente"
+        Me.LabelEstadoCLiente.Size = New System.Drawing.Size(40, 13)
+        Me.LabelEstadoCLiente.TabIndex = 0
+        Me.LabelEstadoCLiente.Text = "Estado"
+        '
         'TextnoLicencia
         '
         Me.TextnoLicencia.Location = New System.Drawing.Point(33, 37)
         Me.TextnoLicencia.Name = "TextnoLicencia"
         Me.TextnoLicencia.Size = New System.Drawing.Size(100, 20)
         Me.TextnoLicencia.TabIndex = 1
+        '
+        'LabelCalleCliente
+        '
+        Me.LabelCalleCliente.AutoSize = True
+        Me.LabelCalleCliente.Location = New System.Drawing.Point(379, 20)
+        Me.LabelCalleCliente.Name = "LabelCalleCliente"
+        Me.LabelCalleCliente.Size = New System.Drawing.Size(30, 13)
+        Me.LabelCalleCliente.TabIndex = 0
+        Me.LabelCalleCliente.Text = "Calle"
+        '
+        'LabelTelCLiente
+        '
+        Me.LabelTelCLiente.AutoSize = True
+        Me.LabelTelCLiente.Location = New System.Drawing.Point(263, 20)
+        Me.LabelTelCLiente.Name = "LabelTelCLiente"
+        Me.LabelTelCLiente.Size = New System.Drawing.Size(49, 13)
+        Me.LabelTelCLiente.TabIndex = 0
+        Me.LabelTelCLiente.Text = "Teléfono"
         '
         'LabelApellidoPCliente
         '
@@ -1238,6 +1288,24 @@ Partial Class Catalago
         '
         'TabEmpleados
         '
+        Me.TabEmpleados.Controls.Add(Me.ComboIDSucursal)
+        Me.TabEmpleados.Controls.Add(Me.DataGridView2)
+        Me.TabEmpleados.Controls.Add(Me.EliminarEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.GuardarEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.NuevoEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.TextCorreoEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.TextApellidoMEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.TextTelEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.TextApellidoPEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.TextNombreEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.Label2)
+        Me.TabEmpleados.Controls.Add(Me.LabelCorreoEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.LabelApellidoMEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.TextUsuarioEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.LabelTelEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.LabelApellidoPEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.LabelNombreEmpleado)
+        Me.TabEmpleados.Controls.Add(Me.LabelUsuario)
         Me.TabEmpleados.Location = New System.Drawing.Point(4, 22)
         Me.TabEmpleados.Name = "TabEmpleados"
         Me.TabEmpleados.Size = New System.Drawing.Size(670, 386)
@@ -1247,126 +1315,30 @@ Partial Class Catalago
         '
         'TabRentas
         '
+        Me.TabRentas.Controls.Add(Me.TextDiasRenta)
+        Me.TabRentas.Controls.Add(Me.DateFechaDevolucion)
+        Me.TabRentas.Controls.Add(Me.DateFechaPrestamo)
+        Me.TabRentas.Controls.Add(Me.ComboLicenciaRenta)
+        Me.TabRentas.Controls.Add(Me.ComboEmpleadoRenta)
+        Me.TabRentas.Controls.Add(Me.ComboPlacaRenta)
+        Me.TabRentas.Controls.Add(Me.DataGridView3)
+        Me.TabRentas.Controls.Add(Me.EliminarRenta)
+        Me.TabRentas.Controls.Add(Me.GuardarRenta)
+        Me.TabRentas.Controls.Add(Me.NuevaRenta)
+        Me.TabRentas.Controls.Add(Me.LabelDiasRenta)
+        Me.TabRentas.Controls.Add(Me.LabelFechaDevolucion)
+        Me.TabRentas.Controls.Add(Me.LabelLicenciaRenta)
+        Me.TabRentas.Controls.Add(Me.TextIDRenta)
+        Me.TabRentas.Controls.Add(Me.LabelFechaPRenta)
+        Me.TabRentas.Controls.Add(Me.LabelEmpleadoRenta)
+        Me.TabRentas.Controls.Add(Me.LabelPlacaRenta)
+        Me.TabRentas.Controls.Add(Me.LabelIDRenta)
         Me.TabRentas.Location = New System.Drawing.Point(4, 22)
         Me.TabRentas.Name = "TabRentas"
         Me.TabRentas.Size = New System.Drawing.Size(670, 386)
         Me.TabRentas.TabIndex = 10
         Me.TabRentas.Text = "Rentas"
         Me.TabRentas.UseVisualStyleBackColor = True
-        '
-        'LabelTelCLiente
-        '
-        Me.LabelTelCLiente.AutoSize = True
-        Me.LabelTelCLiente.Location = New System.Drawing.Point(263, 20)
-        Me.LabelTelCLiente.Name = "LabelTelCLiente"
-        Me.LabelTelCLiente.Size = New System.Drawing.Size(49, 13)
-        Me.LabelTelCLiente.TabIndex = 0
-        Me.LabelTelCLiente.Text = "Teléfono"
-        '
-        'LabelCorreoCliente
-        '
-        Me.LabelCorreoCliente.AutoSize = True
-        Me.LabelCorreoCliente.Location = New System.Drawing.Point(263, 68)
-        Me.LabelCorreoCliente.Name = "LabelCorreoCliente"
-        Me.LabelCorreoCliente.Size = New System.Drawing.Size(93, 13)
-        Me.LabelCorreoCliente.TabIndex = 0
-        Me.LabelCorreoCliente.Text = "Correo electrónico"
-        '
-        'TextTelCliente
-        '
-        Me.TextTelCliente.Location = New System.Drawing.Point(266, 37)
-        Me.TextTelCliente.Name = "TextTelCliente"
-        Me.TextTelCliente.Size = New System.Drawing.Size(100, 20)
-        Me.TextTelCliente.TabIndex = 1
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(266, 84)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 1
-        '
-        'LabelCalleCliente
-        '
-        Me.LabelCalleCliente.AutoSize = True
-        Me.LabelCalleCliente.Location = New System.Drawing.Point(379, 20)
-        Me.LabelCalleCliente.Name = "LabelCalleCliente"
-        Me.LabelCalleCliente.Size = New System.Drawing.Size(30, 13)
-        Me.LabelCalleCliente.TabIndex = 0
-        Me.LabelCalleCliente.Text = "Calle"
-        '
-        'LabelColoniaCLiente
-        '
-        Me.LabelColoniaCLiente.AutoSize = True
-        Me.LabelColoniaCLiente.Location = New System.Drawing.Point(379, 68)
-        Me.LabelColoniaCLiente.Name = "LabelColoniaCLiente"
-        Me.LabelColoniaCLiente.Size = New System.Drawing.Size(42, 13)
-        Me.LabelColoniaCLiente.TabIndex = 0
-        Me.LabelColoniaCLiente.Text = "Colonia"
-        '
-        'TextCalleCLiente
-        '
-        Me.TextCalleCLiente.Location = New System.Drawing.Point(382, 37)
-        Me.TextCalleCLiente.Name = "TextCalleCLiente"
-        Me.TextCalleCLiente.Size = New System.Drawing.Size(100, 20)
-        Me.TextCalleCLiente.TabIndex = 1
-        '
-        'ComboColoniaCLiente
-        '
-        Me.ComboColoniaCLiente.FormattingEnabled = True
-        Me.ComboColoniaCLiente.Location = New System.Drawing.Point(382, 84)
-        Me.ComboColoniaCLiente.Name = "ComboColoniaCLiente"
-        Me.ComboColoniaCLiente.Size = New System.Drawing.Size(100, 21)
-        Me.ComboColoniaCLiente.TabIndex = 16
-        '
-        'LabelNoCasaCliente
-        '
-        Me.LabelNoCasaCliente.AutoSize = True
-        Me.LabelNoCasaCliente.Location = New System.Drawing.Point(613, 20)
-        Me.LabelNoCasaCliente.Name = "LabelNoCasaCliente"
-        Me.LabelNoCasaCliente.Size = New System.Drawing.Size(38, 13)
-        Me.LabelNoCasaCliente.TabIndex = 0
-        Me.LabelNoCasaCliente.Text = "#Casa"
-        '
-        'LabelCiudadCliente
-        '
-        Me.LabelCiudadCliente.AutoSize = True
-        Me.LabelCiudadCliente.Location = New System.Drawing.Point(494, 67)
-        Me.LabelCiudadCliente.Name = "LabelCiudadCliente"
-        Me.LabelCiudadCliente.Size = New System.Drawing.Size(40, 13)
-        Me.LabelCiudadCliente.TabIndex = 0
-        Me.LabelCiudadCliente.Text = "Ciudad"
-        '
-        'TextNoCasaCliente
-        '
-        Me.TextNoCasaCliente.Location = New System.Drawing.Point(616, 37)
-        Me.TextNoCasaCliente.Name = "TextNoCasaCliente"
-        Me.TextNoCasaCliente.Size = New System.Drawing.Size(35, 20)
-        Me.TextNoCasaCliente.TabIndex = 1
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(497, 83)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 16
-        '
-        'LabelEstadoCLiente
-        '
-        Me.LabelEstadoCLiente.AutoSize = True
-        Me.LabelEstadoCLiente.Location = New System.Drawing.Point(494, 20)
-        Me.LabelEstadoCLiente.Name = "LabelEstadoCLiente"
-        Me.LabelEstadoCLiente.Size = New System.Drawing.Size(40, 13)
-        Me.LabelEstadoCLiente.TabIndex = 0
-        Me.LabelEstadoCLiente.Text = "Estado"
-        '
-        'TextEstadoCliente
-        '
-        Me.TextEstadoCliente.Location = New System.Drawing.Point(497, 37)
-        Me.TextEstadoCliente.Name = "TextEstadoCliente"
-        Me.TextEstadoCliente.Size = New System.Drawing.Size(100, 20)
-        Me.TextEstadoCliente.TabIndex = 1
         '
         'TabLogin
         '
@@ -1383,48 +1355,8 @@ Partial Class Catalago
         Me.TabLogin.Padding = New System.Windows.Forms.Padding(3)
         Me.TabLogin.Size = New System.Drawing.Size(670, 386)
         Me.TabLogin.TabIndex = 12
-        Me.TabLogin.Text = "Aministradores"
+        Me.TabLogin.Text = "Login"
         Me.TabLogin.UseVisualStyleBackColor = True
-        '
-        'LabelidAdmin
-        '
-        Me.LabelidAdmin.AutoSize = True
-        Me.LabelidAdmin.Location = New System.Drawing.Point(30, 20)
-        Me.LabelidAdmin.Name = "LabelidAdmin"
-        Me.LabelidAdmin.Size = New System.Drawing.Size(43, 13)
-        Me.LabelidAdmin.TabIndex = 0
-        Me.LabelidAdmin.Text = "Usuario"
-        '
-        'TextIDAdmin
-        '
-        Me.TextIDAdmin.Location = New System.Drawing.Point(33, 37)
-        Me.TextIDAdmin.Name = "TextIDAdmin"
-        Me.TextIDAdmin.Size = New System.Drawing.Size(100, 20)
-        Me.TextIDAdmin.TabIndex = 1
-        '
-        'LabelContrasena
-        '
-        Me.LabelContrasena.AutoSize = True
-        Me.LabelContrasena.Location = New System.Drawing.Point(30, 68)
-        Me.LabelContrasena.Name = "LabelContrasena"
-        Me.LabelContrasena.Size = New System.Drawing.Size(61, 13)
-        Me.LabelContrasena.TabIndex = 0
-        Me.LabelContrasena.Text = "Contraseña"
-        '
-        'TextContraseña
-        '
-        Me.TextContraseña.Location = New System.Drawing.Point(33, 84)
-        Me.TextContraseña.Name = "TextContraseña"
-        Me.TextContraseña.Size = New System.Drawing.Size(100, 20)
-        Me.TextContraseña.TabIndex = 1
-        '
-        'DGVAdmins
-        '
-        Me.DGVAdmins.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVAdmins.Location = New System.Drawing.Point(6, 110)
-        Me.DGVAdmins.Name = "DGVAdmins"
-        Me.DGVAdmins.Size = New System.Drawing.Size(661, 244)
-        Me.DGVAdmins.TabIndex = 2
         '
         'EliminarAdmin
         '
@@ -1453,6 +1385,474 @@ Partial Class Catalago
         Me.NuevoAdmin.Text = "Nuevo"
         Me.NuevoAdmin.UseVisualStyleBackColor = True
         '
+        'DGVAdmins
+        '
+        Me.DGVAdmins.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVAdmins.Location = New System.Drawing.Point(6, 110)
+        Me.DGVAdmins.Name = "DGVAdmins"
+        Me.DGVAdmins.Size = New System.Drawing.Size(661, 244)
+        Me.DGVAdmins.TabIndex = 2
+        '
+        'TextContraseña
+        '
+        Me.TextContraseña.Location = New System.Drawing.Point(33, 84)
+        Me.TextContraseña.Name = "TextContraseña"
+        Me.TextContraseña.Size = New System.Drawing.Size(100, 20)
+        Me.TextContraseña.TabIndex = 1
+        '
+        'TextIDAdmin
+        '
+        Me.TextIDAdmin.Location = New System.Drawing.Point(33, 37)
+        Me.TextIDAdmin.Name = "TextIDAdmin"
+        Me.TextIDAdmin.Size = New System.Drawing.Size(100, 20)
+        Me.TextIDAdmin.TabIndex = 1
+        '
+        'LabelContrasena
+        '
+        Me.LabelContrasena.AutoSize = True
+        Me.LabelContrasena.Location = New System.Drawing.Point(30, 68)
+        Me.LabelContrasena.Name = "LabelContrasena"
+        Me.LabelContrasena.Size = New System.Drawing.Size(61, 13)
+        Me.LabelContrasena.TabIndex = 0
+        Me.LabelContrasena.Text = "Contraseña"
+        '
+        'LabelidAdmin
+        '
+        Me.LabelidAdmin.AutoSize = True
+        Me.LabelidAdmin.Location = New System.Drawing.Point(30, 20)
+        Me.LabelidAdmin.Name = "LabelidAdmin"
+        Me.LabelidAdmin.Size = New System.Drawing.Size(43, 13)
+        Me.LabelidAdmin.TabIndex = 0
+        Me.LabelidAdmin.Text = "Usuario"
+        '
+        'LabelPrecioDIa
+        '
+        Me.LabelPrecioDIa.AutoSize = True
+        Me.LabelPrecioDIa.Location = New System.Drawing.Point(183, 68)
+        Me.LabelPrecioDIa.Name = "LabelPrecioDIa"
+        Me.LabelPrecioDIa.Size = New System.Drawing.Size(74, 13)
+        Me.LabelPrecioDIa.TabIndex = 0
+        Me.LabelPrecioDIa.Text = "Precio por día"
+        '
+        'TextPrecioDia
+        '
+        Me.TextPrecioDia.Location = New System.Drawing.Point(183, 84)
+        Me.TextPrecioDia.Name = "TextPrecioDia"
+        Me.TextPrecioDia.Size = New System.Drawing.Size(121, 20)
+        Me.TextPrecioDia.TabIndex = 1
+        '
+        'LabelPrecioGarantia
+        '
+        Me.LabelPrecioGarantia.AutoSize = True
+        Me.LabelPrecioGarantia.Location = New System.Drawing.Point(354, 20)
+        Me.LabelPrecioGarantia.Name = "LabelPrecioGarantia"
+        Me.LabelPrecioGarantia.Size = New System.Drawing.Size(95, 13)
+        Me.LabelPrecioGarantia.TabIndex = 0
+        Me.LabelPrecioGarantia.Text = "Precio de garantía"
+        '
+        'TextPrecioGarantia
+        '
+        Me.TextPrecioGarantia.Location = New System.Drawing.Point(354, 36)
+        Me.TextPrecioGarantia.Name = "TextPrecioGarantia"
+        Me.TextPrecioGarantia.Size = New System.Drawing.Size(100, 20)
+        Me.TextPrecioGarantia.TabIndex = 1
+        '
+        'TextIDSucursal
+        '
+        Me.TextIDSucursal.Location = New System.Drawing.Point(33, 36)
+        Me.TextIDSucursal.Name = "TextIDSucursal"
+        Me.TextIDSucursal.Size = New System.Drawing.Size(100, 20)
+        Me.TextIDSucursal.TabIndex = 12
+        '
+        'LabelNombreSucursal
+        '
+        Me.LabelNombreSucursal.AutoSize = True
+        Me.LabelNombreSucursal.Location = New System.Drawing.Point(30, 68)
+        Me.LabelNombreSucursal.Name = "LabelNombreSucursal"
+        Me.LabelNombreSucursal.Size = New System.Drawing.Size(44, 13)
+        Me.LabelNombreSucursal.TabIndex = 0
+        Me.LabelNombreSucursal.Text = "Nombre"
+        '
+        'TextNombreSucursal
+        '
+        Me.TextNombreSucursal.Location = New System.Drawing.Point(33, 84)
+        Me.TextNombreSucursal.Name = "TextNombreSucursal"
+        Me.TextNombreSucursal.Size = New System.Drawing.Size(100, 20)
+        Me.TextNombreSucursal.TabIndex = 12
+        '
+        'LabelSucIDEstado
+        '
+        Me.LabelSucIDEstado.AutoSize = True
+        Me.LabelSucIDEstado.Location = New System.Drawing.Point(197, 20)
+        Me.LabelSucIDEstado.Name = "LabelSucIDEstado"
+        Me.LabelSucIDEstado.Size = New System.Drawing.Size(40, 13)
+        Me.LabelSucIDEstado.TabIndex = 13
+        Me.LabelSucIDEstado.Text = "Estado"
+        '
+        'ComboEstadoSucursal
+        '
+        Me.ComboEstadoSucursal.FormattingEnabled = True
+        Me.ComboEstadoSucursal.Location = New System.Drawing.Point(200, 36)
+        Me.ComboEstadoSucursal.Name = "ComboEstadoSucursal"
+        Me.ComboEstadoSucursal.Size = New System.Drawing.Size(111, 21)
+        Me.ComboEstadoSucursal.TabIndex = 14
+        '
+        'LabelCiudadSucursal
+        '
+        Me.LabelCiudadSucursal.AutoSize = True
+        Me.LabelCiudadSucursal.Location = New System.Drawing.Point(197, 68)
+        Me.LabelCiudadSucursal.Name = "LabelCiudadSucursal"
+        Me.LabelCiudadSucursal.Size = New System.Drawing.Size(40, 13)
+        Me.LabelCiudadSucursal.TabIndex = 13
+        Me.LabelCiudadSucursal.Text = "Ciudad"
+        '
+        'ComboCiudadSucursal
+        '
+        Me.ComboCiudadSucursal.FormattingEnabled = True
+        Me.ComboCiudadSucursal.Location = New System.Drawing.Point(200, 84)
+        Me.ComboCiudadSucursal.Name = "ComboCiudadSucursal"
+        Me.ComboCiudadSucursal.Size = New System.Drawing.Size(111, 21)
+        Me.ComboCiudadSucursal.TabIndex = 14
+        '
+        'LabelColSucursal
+        '
+        Me.LabelColSucursal.AutoSize = True
+        Me.LabelColSucursal.Location = New System.Drawing.Point(369, 20)
+        Me.LabelColSucursal.Name = "LabelColSucursal"
+        Me.LabelColSucursal.Size = New System.Drawing.Size(42, 13)
+        Me.LabelColSucursal.TabIndex = 13
+        Me.LabelColSucursal.Text = "Colonia"
+        '
+        'ComboColoniaSucursal
+        '
+        Me.ComboColoniaSucursal.FormattingEnabled = True
+        Me.ComboColoniaSucursal.Location = New System.Drawing.Point(372, 36)
+        Me.ComboColoniaSucursal.Name = "ComboColoniaSucursal"
+        Me.ComboColoniaSucursal.Size = New System.Drawing.Size(100, 21)
+        Me.ComboColoniaSucursal.TabIndex = 14
+        '
+        'LabelCalleSucursal
+        '
+        Me.LabelCalleSucursal.AutoSize = True
+        Me.LabelCalleSucursal.Location = New System.Drawing.Point(369, 68)
+        Me.LabelCalleSucursal.Name = "LabelCalleSucursal"
+        Me.LabelCalleSucursal.Size = New System.Drawing.Size(30, 13)
+        Me.LabelCalleSucursal.TabIndex = 0
+        Me.LabelCalleSucursal.Text = "Calle"
+        '
+        'TextCalleSucursal
+        '
+        Me.TextCalleSucursal.Location = New System.Drawing.Point(372, 84)
+        Me.TextCalleSucursal.Name = "TextCalleSucursal"
+        Me.TextCalleSucursal.Size = New System.Drawing.Size(100, 20)
+        Me.TextCalleSucursal.TabIndex = 12
+        '
+        'DGVSucursal
+        '
+        Me.DGVSucursal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVSucursal.Location = New System.Drawing.Point(3, 110)
+        Me.DGVSucursal.Name = "DGVSucursal"
+        Me.DGVSucursal.Size = New System.Drawing.Size(664, 244)
+        Me.DGVSucursal.TabIndex = 16
+        '
+        'ComboIDSucursal
+        '
+        Me.ComboIDSucursal.FormattingEnabled = True
+        Me.ComboIDSucursal.Location = New System.Drawing.Point(382, 36)
+        Me.ComboIDSucursal.Name = "ComboIDSucursal"
+        Me.ComboIDSucursal.Size = New System.Drawing.Size(100, 21)
+        Me.ComboIDSucursal.TabIndex = 41
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(3, 110)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(664, 244)
+        Me.DataGridView2.TabIndex = 40
+        '
+        'EliminarEmpleado
+        '
+        Me.EliminarEmpleado.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarEmpleado.Name = "EliminarEmpleado"
+        Me.EliminarEmpleado.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarEmpleado.TabIndex = 37
+        Me.EliminarEmpleado.Text = "Eliminar"
+        Me.EliminarEmpleado.UseVisualStyleBackColor = True
+        '
+        'GuardarEmpleado
+        '
+        Me.GuardarEmpleado.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarEmpleado.Name = "GuardarEmpleado"
+        Me.GuardarEmpleado.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarEmpleado.TabIndex = 38
+        Me.GuardarEmpleado.Text = "Guardar"
+        Me.GuardarEmpleado.UseVisualStyleBackColor = True
+        '
+        'NuevoEmpleado
+        '
+        Me.NuevoEmpleado.Location = New System.Drawing.Point(430, 360)
+        Me.NuevoEmpleado.Name = "NuevoEmpleado"
+        Me.NuevoEmpleado.Size = New System.Drawing.Size(75, 23)
+        Me.NuevoEmpleado.TabIndex = 39
+        Me.NuevoEmpleado.Text = "Nuevo"
+        Me.NuevoEmpleado.UseVisualStyleBackColor = True
+        '
+        'TextCorreoEmpleado
+        '
+        Me.TextCorreoEmpleado.Location = New System.Drawing.Point(266, 84)
+        Me.TextCorreoEmpleado.Name = "TextCorreoEmpleado"
+        Me.TextCorreoEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.TextCorreoEmpleado.TabIndex = 35
+        '
+        'TextApellidoMEmpleado
+        '
+        Me.TextApellidoMEmpleado.Location = New System.Drawing.Point(151, 84)
+        Me.TextApellidoMEmpleado.Name = "TextApellidoMEmpleado"
+        Me.TextApellidoMEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.TextApellidoMEmpleado.TabIndex = 33
+        '
+        'TextTelEmpleado
+        '
+        Me.TextTelEmpleado.Location = New System.Drawing.Point(266, 37)
+        Me.TextTelEmpleado.Name = "TextTelEmpleado"
+        Me.TextTelEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.TextTelEmpleado.TabIndex = 36
+        '
+        'TextApellidoPEmpleado
+        '
+        Me.TextApellidoPEmpleado.Location = New System.Drawing.Point(151, 37)
+        Me.TextApellidoPEmpleado.Name = "TextApellidoPEmpleado"
+        Me.TextApellidoPEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.TextApellidoPEmpleado.TabIndex = 30
+        '
+        'TextNombreEmpleado
+        '
+        Me.TextNombreEmpleado.Location = New System.Drawing.Point(33, 84)
+        Me.TextNombreEmpleado.Name = "TextNombreEmpleado"
+        Me.TextNombreEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.TextNombreEmpleado.TabIndex = 29
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(379, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(48, 13)
+        Me.Label2.TabIndex = 25
+        Me.Label2.Text = "Sucursal"
+        '
+        'LabelCorreoEmpleado
+        '
+        Me.LabelCorreoEmpleado.AutoSize = True
+        Me.LabelCorreoEmpleado.Location = New System.Drawing.Point(263, 68)
+        Me.LabelCorreoEmpleado.Name = "LabelCorreoEmpleado"
+        Me.LabelCorreoEmpleado.Size = New System.Drawing.Size(93, 13)
+        Me.LabelCorreoEmpleado.TabIndex = 24
+        Me.LabelCorreoEmpleado.Text = "Correo electrónico"
+        '
+        'LabelApellidoMEmpleado
+        '
+        Me.LabelApellidoMEmpleado.AutoSize = True
+        Me.LabelApellidoMEmpleado.Location = New System.Drawing.Point(148, 68)
+        Me.LabelApellidoMEmpleado.Name = "LabelApellidoMEmpleado"
+        Me.LabelApellidoMEmpleado.Size = New System.Drawing.Size(85, 13)
+        Me.LabelApellidoMEmpleado.TabIndex = 23
+        Me.LabelApellidoMEmpleado.Text = "Apellido materno"
+        '
+        'TextUsuarioEmpleado
+        '
+        Me.TextUsuarioEmpleado.Location = New System.Drawing.Point(33, 37)
+        Me.TextUsuarioEmpleado.Name = "TextUsuarioEmpleado"
+        Me.TextUsuarioEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.TextUsuarioEmpleado.TabIndex = 28
+        '
+        'LabelTelEmpleado
+        '
+        Me.LabelTelEmpleado.AutoSize = True
+        Me.LabelTelEmpleado.Location = New System.Drawing.Point(263, 20)
+        Me.LabelTelEmpleado.Name = "LabelTelEmpleado"
+        Me.LabelTelEmpleado.Size = New System.Drawing.Size(49, 13)
+        Me.LabelTelEmpleado.TabIndex = 19
+        Me.LabelTelEmpleado.Text = "Teléfono"
+        '
+        'LabelApellidoPEmpleado
+        '
+        Me.LabelApellidoPEmpleado.AutoSize = True
+        Me.LabelApellidoPEmpleado.Location = New System.Drawing.Point(148, 20)
+        Me.LabelApellidoPEmpleado.Name = "LabelApellidoPEmpleado"
+        Me.LabelApellidoPEmpleado.Size = New System.Drawing.Size(83, 13)
+        Me.LabelApellidoPEmpleado.TabIndex = 18
+        Me.LabelApellidoPEmpleado.Text = "Apellido paterno"
+        '
+        'LabelNombreEmpleado
+        '
+        Me.LabelNombreEmpleado.AutoSize = True
+        Me.LabelNombreEmpleado.Location = New System.Drawing.Point(30, 68)
+        Me.LabelNombreEmpleado.Name = "LabelNombreEmpleado"
+        Me.LabelNombreEmpleado.Size = New System.Drawing.Size(55, 13)
+        Me.LabelNombreEmpleado.TabIndex = 27
+        Me.LabelNombreEmpleado.Text = "Nombre(s)"
+        '
+        'LabelUsuario
+        '
+        Me.LabelUsuario.AutoSize = True
+        Me.LabelUsuario.Location = New System.Drawing.Point(30, 20)
+        Me.LabelUsuario.Name = "LabelUsuario"
+        Me.LabelUsuario.Size = New System.Drawing.Size(43, 13)
+        Me.LabelUsuario.TabIndex = 17
+        Me.LabelUsuario.Text = "Usuario"
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(3, 110)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.Size = New System.Drawing.Size(664, 244)
+        Me.DataGridView3.TabIndex = 58
+        '
+        'EliminarRenta
+        '
+        Me.EliminarRenta.Location = New System.Drawing.Point(592, 360)
+        Me.EliminarRenta.Name = "EliminarRenta"
+        Me.EliminarRenta.Size = New System.Drawing.Size(75, 23)
+        Me.EliminarRenta.TabIndex = 55
+        Me.EliminarRenta.Text = "Eliminar"
+        Me.EliminarRenta.UseVisualStyleBackColor = True
+        '
+        'GuardarRenta
+        '
+        Me.GuardarRenta.Location = New System.Drawing.Point(511, 360)
+        Me.GuardarRenta.Name = "GuardarRenta"
+        Me.GuardarRenta.Size = New System.Drawing.Size(75, 23)
+        Me.GuardarRenta.TabIndex = 56
+        Me.GuardarRenta.Text = "Guardar"
+        Me.GuardarRenta.UseVisualStyleBackColor = True
+        '
+        'NuevaRenta
+        '
+        Me.NuevaRenta.Location = New System.Drawing.Point(430, 360)
+        Me.NuevaRenta.Name = "NuevaRenta"
+        Me.NuevaRenta.Size = New System.Drawing.Size(75, 23)
+        Me.NuevaRenta.TabIndex = 57
+        Me.NuevaRenta.Text = "Nuevo"
+        Me.NuevaRenta.UseVisualStyleBackColor = True
+        '
+        'LabelDiasRenta
+        '
+        Me.LabelDiasRenta.AutoSize = True
+        Me.LabelDiasRenta.Location = New System.Drawing.Point(481, 20)
+        Me.LabelDiasRenta.Name = "LabelDiasRenta"
+        Me.LabelDiasRenta.Size = New System.Drawing.Size(70, 13)
+        Me.LabelDiasRenta.TabIndex = 47
+        Me.LabelDiasRenta.Text = "Dias de renta"
+        '
+        'LabelFechaDevolucion
+        '
+        Me.LabelFechaDevolucion.AutoSize = True
+        Me.LabelFechaDevolucion.Location = New System.Drawing.Point(263, 68)
+        Me.LabelFechaDevolucion.Name = "LabelFechaDevolucion"
+        Me.LabelFechaDevolucion.Size = New System.Drawing.Size(107, 13)
+        Me.LabelFechaDevolucion.TabIndex = 46
+        Me.LabelFechaDevolucion.Text = "Fecha de devolución"
+        '
+        'LabelLicenciaRenta
+        '
+        Me.LabelLicenciaRenta.AutoSize = True
+        Me.LabelLicenciaRenta.Location = New System.Drawing.Point(148, 68)
+        Me.LabelLicenciaRenta.Name = "LabelLicenciaRenta"
+        Me.LabelLicenciaRenta.Size = New System.Drawing.Size(98, 13)
+        Me.LabelLicenciaRenta.TabIndex = 45
+        Me.LabelLicenciaRenta.Text = "Licencia del cliente"
+        '
+        'TextIDRenta
+        '
+        Me.TextIDRenta.Location = New System.Drawing.Point(33, 37)
+        Me.TextIDRenta.Name = "TextIDRenta"
+        Me.TextIDRenta.Size = New System.Drawing.Size(100, 20)
+        Me.TextIDRenta.TabIndex = 49
+        '
+        'LabelFechaPRenta
+        '
+        Me.LabelFechaPRenta.AutoSize = True
+        Me.LabelFechaPRenta.Location = New System.Drawing.Point(263, 20)
+        Me.LabelFechaPRenta.Name = "LabelFechaPRenta"
+        Me.LabelFechaPRenta.Size = New System.Drawing.Size(37, 13)
+        Me.LabelFechaPRenta.TabIndex = 44
+        Me.LabelFechaPRenta.Text = "Fecha"
+        '
+        'LabelEmpleadoRenta
+        '
+        Me.LabelEmpleadoRenta.AutoSize = True
+        Me.LabelEmpleadoRenta.Location = New System.Drawing.Point(148, 20)
+        Me.LabelEmpleadoRenta.Name = "LabelEmpleadoRenta"
+        Me.LabelEmpleadoRenta.Size = New System.Drawing.Size(54, 13)
+        Me.LabelEmpleadoRenta.TabIndex = 43
+        Me.LabelEmpleadoRenta.Text = "Empleado"
+        '
+        'LabelPlacaRenta
+        '
+        Me.LabelPlacaRenta.AutoSize = True
+        Me.LabelPlacaRenta.Location = New System.Drawing.Point(30, 68)
+        Me.LabelPlacaRenta.Name = "LabelPlacaRenta"
+        Me.LabelPlacaRenta.Size = New System.Drawing.Size(34, 13)
+        Me.LabelPlacaRenta.TabIndex = 48
+        Me.LabelPlacaRenta.Text = "Placa"
+        '
+        'LabelIDRenta
+        '
+        Me.LabelIDRenta.AutoSize = True
+        Me.LabelIDRenta.Location = New System.Drawing.Point(30, 20)
+        Me.LabelIDRenta.Name = "LabelIDRenta"
+        Me.LabelIDRenta.Size = New System.Drawing.Size(50, 13)
+        Me.LabelIDRenta.TabIndex = 42
+        Me.LabelIDRenta.Text = "ID Renta"
+        '
+        'ComboPlacaRenta
+        '
+        Me.ComboPlacaRenta.FormattingEnabled = True
+        Me.ComboPlacaRenta.Location = New System.Drawing.Point(33, 83)
+        Me.ComboPlacaRenta.Name = "ComboPlacaRenta"
+        Me.ComboPlacaRenta.Size = New System.Drawing.Size(100, 21)
+        Me.ComboPlacaRenta.TabIndex = 60
+        '
+        'ComboEmpleadoRenta
+        '
+        Me.ComboEmpleadoRenta.FormattingEnabled = True
+        Me.ComboEmpleadoRenta.Location = New System.Drawing.Point(151, 36)
+        Me.ComboEmpleadoRenta.Name = "ComboEmpleadoRenta"
+        Me.ComboEmpleadoRenta.Size = New System.Drawing.Size(100, 21)
+        Me.ComboEmpleadoRenta.TabIndex = 61
+        '
+        'ComboLicenciaRenta
+        '
+        Me.ComboLicenciaRenta.FormattingEnabled = True
+        Me.ComboLicenciaRenta.Location = New System.Drawing.Point(151, 84)
+        Me.ComboLicenciaRenta.Name = "ComboLicenciaRenta"
+        Me.ComboLicenciaRenta.Size = New System.Drawing.Size(100, 21)
+        Me.ComboLicenciaRenta.TabIndex = 62
+        '
+        'DateFechaPrestamo
+        '
+        Me.DateFechaPrestamo.Location = New System.Drawing.Point(266, 37)
+        Me.DateFechaPrestamo.Name = "DateFechaPrestamo"
+        Me.DateFechaPrestamo.Size = New System.Drawing.Size(200, 20)
+        Me.DateFechaPrestamo.TabIndex = 63
+        '
+        'DateFechaDevolucion
+        '
+        Me.DateFechaDevolucion.Location = New System.Drawing.Point(266, 84)
+        Me.DateFechaDevolucion.Name = "DateFechaDevolucion"
+        Me.DateFechaDevolucion.Size = New System.Drawing.Size(200, 20)
+        Me.DateFechaDevolucion.TabIndex = 63
+        '
+        'TextDiasRenta
+        '
+        Me.TextDiasRenta.Location = New System.Drawing.Point(484, 36)
+        Me.TextDiasRenta.Name = "TextDiasRenta"
+        Me.TextDiasRenta.Size = New System.Drawing.Size(100, 20)
+        Me.TextDiasRenta.TabIndex = 64
+        '
         'Catalago
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1478,9 +1878,6 @@ Partial Class Catalago
         Me.TabModelos.ResumeLayout(False)
         Me.TabModelos.PerformLayout()
         CType(Me.DataModelos, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPrecios.ResumeLayout(False)
-        Me.TabPrecios.PerformLayout()
-        CType(Me.DataPrecios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabEstados.ResumeLayout(False)
         Me.TabEstados.PerformLayout()
         CType(Me.DataEstados, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1495,9 +1892,16 @@ Partial Class Catalago
         Me.TabClientes.ResumeLayout(False)
         Me.TabClientes.PerformLayout()
         CType(Me.DGVClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabEmpleados.ResumeLayout(False)
+        Me.TabEmpleados.PerformLayout()
+        Me.TabRentas.ResumeLayout(False)
+        Me.TabRentas.PerformLayout()
         Me.TabLogin.ResumeLayout(False)
         Me.TabLogin.PerformLayout()
         CType(Me.DGVAdmins, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVSucursal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1533,9 +1937,6 @@ Partial Class Catalago
     Friend WithEvents LabelNombreciudad As Label
     Friend WithEvents LabelCiudadesIDEstado As Label
     Friend WithEvents LabelIDCiudad As Label
-    Friend WithEvents TabPrecios As TabPage
-    Friend WithEvents TextIDPrecio As TextBox
-    Friend WithEvents LabelIDPrecio As Label
     Friend WithEvents TabAutos As TabPage
     Friend WithEvents TextCapacidad As TextBox
     Friend WithEvents LabelCapacidad As Label
@@ -1551,25 +1952,18 @@ Partial Class Catalago
     Friend WithEvents ComboEstAuto As ComboBox
     Friend WithEvents ComboMarca As ComboBox
     Friend WithEvents LabelAutoEstAuto As Label
-    Friend WithEvents LabelAutoMarca As Label
-    Friend WithEvents TextMontoDia As TextBox
-    Friend WithEvents LabelPrecioModelo As Label
-    Friend WithEvents ComboPreciosIDModelo As ComboBox
-    Friend WithEvents LabelMontoDia As Label
-    Friend WithEvents TextMontoGarantia As TextBox
-    Friend WithEvents LabelMontoGarantia As Label
+    Friend WithEvents LabelAutoModelo As Label
     Friend WithEvents TextIDColonia As TextBox
     Friend WithEvents LabelIDColonia As Label
     Friend WithEvents ComboColCiudades As ComboBox
     Friend WithEvents ComboColEstados As ComboBox
     Friend WithEvents LabelColCiudad As Label
     Friend WithEvents LabelColEstado As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextNombreColonia As TextBox
     Friend WithEvents LabelNombreColonia As Label
     Friend WithEvents LabelIDSucursal As Label
     Friend WithEvents DataMarcas As DataGridView
     Friend WithEvents DataModelos As DataGridView
-    Friend WithEvents DataPrecios As DataGridView
     Friend WithEvents DataEstados As DataGridView
     Friend WithEvents DataCiudades As DataGridView
     Friend WithEvents DataColonias As DataGridView
@@ -1585,9 +1979,6 @@ Partial Class Catalago
     Friend WithEvents EliminarModelo As Button
     Friend WithEvents GuardarModelo As Button
     Friend WithEvents NuevoModelo As Button
-    Friend WithEvents EliminarPrecio As Button
-    Friend WithEvents GuardarPrecio As Button
-    Friend WithEvents NuevoPrecio As Button
     Friend WithEvents EliminarEstado As Button
     Friend WithEvents GuardarEstado As Button
     Friend WithEvents NuevoEstado As Button
@@ -1612,9 +2003,9 @@ Partial Class Catalago
     Friend WithEvents TextApellidoPCliente As TextBox
     Friend WithEvents LabelApellidoMCliente As Label
     Friend WithEvents LabelApellidoPCliente As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboClienteCiudad As ComboBox
     Friend WithEvents ComboColoniaCLiente As ComboBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextCorreoCliente As TextBox
     Friend WithEvents TextNoCasaCliente As TextBox
     Friend WithEvents TextEstadoCliente As TextBox
     Friend WithEvents TextCalleCLiente As TextBox
@@ -1635,4 +2026,56 @@ Partial Class Catalago
     Friend WithEvents TextIDAdmin As TextBox
     Friend WithEvents LabelContrasena As Label
     Friend WithEvents LabelidAdmin As Label
+    Friend WithEvents TextPrecioDia As TextBox
+    Friend WithEvents LabelPrecioDIa As Label
+    Friend WithEvents TextPrecioGarantia As TextBox
+    Friend WithEvents LabelPrecioGarantia As Label
+    Friend WithEvents TextIDSucursal As TextBox
+    Friend WithEvents DGVSucursal As DataGridView
+    Friend WithEvents ComboCiudadSucursal As ComboBox
+    Friend WithEvents ComboColoniaSucursal As ComboBox
+    Friend WithEvents ComboEstadoSucursal As ComboBox
+    Friend WithEvents LabelColSucursal As Label
+    Friend WithEvents LabelCiudadSucursal As Label
+    Friend WithEvents LabelSucIDEstado As Label
+    Friend WithEvents TextCalleSucursal As TextBox
+    Friend WithEvents TextNombreSucursal As TextBox
+    Friend WithEvents LabelCalleSucursal As Label
+    Friend WithEvents LabelNombreSucursal As Label
+    Friend WithEvents ComboIDSucursal As ComboBox
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents EliminarEmpleado As Button
+    Friend WithEvents GuardarEmpleado As Button
+    Friend WithEvents NuevoEmpleado As Button
+    Friend WithEvents TextCorreoEmpleado As TextBox
+    Friend WithEvents TextApellidoMEmpleado As TextBox
+    Friend WithEvents TextTelEmpleado As TextBox
+    Friend WithEvents TextApellidoPEmpleado As TextBox
+    Friend WithEvents TextNombreEmpleado As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents LabelCorreoEmpleado As Label
+    Friend WithEvents LabelApellidoMEmpleado As Label
+    Friend WithEvents TextUsuarioEmpleado As TextBox
+    Friend WithEvents LabelTelEmpleado As Label
+    Friend WithEvents LabelApellidoPEmpleado As Label
+    Friend WithEvents LabelNombreEmpleado As Label
+    Friend WithEvents LabelUsuario As Label
+    Friend WithEvents DataGridView3 As DataGridView
+    Friend WithEvents EliminarRenta As Button
+    Friend WithEvents GuardarRenta As Button
+    Friend WithEvents NuevaRenta As Button
+    Friend WithEvents LabelDiasRenta As Label
+    Friend WithEvents LabelFechaDevolucion As Label
+    Friend WithEvents LabelLicenciaRenta As Label
+    Friend WithEvents TextIDRenta As TextBox
+    Friend WithEvents LabelFechaPRenta As Label
+    Friend WithEvents LabelEmpleadoRenta As Label
+    Friend WithEvents LabelPlacaRenta As Label
+    Friend WithEvents LabelIDRenta As Label
+    Friend WithEvents ComboPlacaRenta As ComboBox
+    Friend WithEvents ComboEmpleadoRenta As ComboBox
+    Friend WithEvents ComboLicenciaRenta As ComboBox
+    Friend WithEvents DateFechaPrestamo As DateTimePicker
+    Friend WithEvents DateFechaDevolucion As DateTimePicker
+    Friend WithEvents TextDiasRenta As TextBox
 End Class
