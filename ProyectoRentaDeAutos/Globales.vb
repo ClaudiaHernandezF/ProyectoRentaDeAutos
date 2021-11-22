@@ -8,14 +8,24 @@ Module Globales
     Public cnx As OracleConnection
 
     ' Definir variables de mi proyecto
+
+    ' LogAdministradores
     Public usuario As String
     Public contrasena As String
+
+    ' EstadosAuto
     Public idEstadoAuto As Integer
     Public descripcion As String
+
+    ' Marcas
     Public idMarca As Integer
     Public nombreMarca As String
+
+    ' Modelos
     Public idModelo As Integer
     Public nombreModelo As String
+
+    ' Autos
     Public placa As String
     Public capacidad As Integer
     Public disponible As String
@@ -49,4 +59,9 @@ Module Globales
     Public fechaDevolucion As Date
     Public diasRenta As String
 
+
+    Public id_estado As String
+    Public miEstado As Integer
+
+    Public id_auto As String
 End Module
